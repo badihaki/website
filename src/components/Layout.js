@@ -1,12 +1,15 @@
 import React from "react"
+import { Outlet } from "react-router-dom";
+import Nav from "./Nav";
 
 function Layout(){
     return(
         <div>
             <div id="navigation">
-                <h1>Navigation Bar</h1>
+                <Nav />
             </div>
             <div id="content">
+                <Outlet />
             </div>
         </div>
     )
