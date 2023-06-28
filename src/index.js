@@ -7,7 +7,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import Home from './components/Home';
 import Layout from './components/Layout';
 import ErrorPage from './components/Error';
-import Home from './components/Home';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Art from './components/pages/Art';
+import Code from './components/pages/Code';
+import Gamedev from './components/pages/Gamedev';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -19,6 +23,49 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/art",
+        element: <Art />
+      },
+      {
+        path: "/code",
+        element: <Code />
+      },
+      {
+        path: "/gamedev",
+        element: <Gamedev />
+      }
+    ]
+  },
+  {
+    path: "/website",
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/website",
+        element: <Home />
+      },
+      {
+        path: "/website/about",
+        element: <About />
+      },
+      {
+        path: "/website/art",
+        element: <Art />
+      },
+      {
+        path: "/website/code",
+        element: <Code />
+      },
+      {
+        path: "/website/gamedev",
+        element: <Gamedev />
       }
     ]
   }

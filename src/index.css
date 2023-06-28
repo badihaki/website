@@ -39,7 +39,7 @@ code {
   text-align: center;
   
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 15rem;
 }
 
 #navigation a {
@@ -53,12 +53,29 @@ code {
   padding: 0;
 
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
+}
+
+#navigation li {
+  background-color: #1b1b1b;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+
+#nav-title {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 785;
+
+  text-align: center;
+  margin: 0.5rem;
 }
 
 #content {
   background-color: #1b1b1b;
   color: whitesmoke;
+  align-items: center;
+  text-align: center;
 }
 
 #error-page {

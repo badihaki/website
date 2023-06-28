@@ -12,15 +12,14 @@ function Nav(){
 
     return(
         <div>
-            <h1>
-                Navigation
-            </h1>
+            <div id="nav-title">
+                <Link to={"/"}>Badi-Haki Martin</Link>
+            </div>
             <ul>
-                <NavigationText link={"/"} linkText={"Home"} />
-                <NavigationText link={"/about"} linkText={"About"} />
-                <NavigationText link={"/art"} linkText={"Art"} />
-                <NavigationText link={"/code"} linkText={"Code"} />
-                <NavigationText link={"/gaming"} linkText={"Gamedev"} />
+                <NavigationText link={"/website/about"} linkText={"About"} />
+                <NavigationText link={"/website/art"} linkText={"Art"} />
+                <NavigationText link={"/website/code"} linkText={"Code"} />
+                <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />
             </ul>
         </div>
     )
