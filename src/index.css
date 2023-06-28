@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   background-color: #1b1b1b;
+  height: -webkit-fill-available;
 }
 *,
 *:before,
@@ -23,6 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
     margin: 0;
+    height: -webkit-fill-available;
+
 }
 
 code {
@@ -93,27 +96,33 @@ code {
   text-align: center;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 90vh;
 }
 
 #home {
   flex: 1;
+  height: 100%;
 }
 
-#home > .intro {
+.intro {
   font-size: 0.85rem;
   font-weight: 300;
   text-align: center;
-  margin: 0;
+  margin: 0 50px 0;
   padding: 0;
   background-color: #333;
   height: 11.5px;
+  position: relative;
 }
 
-#home > p {
-  font-size: 1.15rem;
-  font-weight: 500;
-  padding-bottom: 15%;
+p.panel {
+  border: 1px dotted rgb(105, 105, 105);
+  background-color: rgba(17, 17, 17, 0.384);
+  margin: 75px 50px 0px;
+  width: 350px;
+  
+  font-size: 1.25rem ;
+  position: relative;
 }
 
 #error-page {

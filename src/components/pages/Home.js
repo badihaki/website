@@ -9,11 +9,12 @@ function Home(){
             <p className="intro">
                 Illustrator || Software Engineer || Game Developer
             </p>
-            <p>
-                Welcome to the personal website of Badi-Haki Martin.
+            <p className="panel">
+                Welcome to the personal website of Badi-Haki Martin. I am an illustrator, software engineer, and game developer with a passion for bringing new
+                creations and worlds to life.
             </p>
-            <p>
-                I have experience with several technologies.
+            <p className="panel">
+                Here you can learn more about me and my journey, my creations, and what drives me. I hope you enjoy your time here.
             </p>
         </div>
     )
