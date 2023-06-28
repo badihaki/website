@@ -18,29 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Home />
-      },
-      {
-        path: "/about",
-        element: <About />
-      },
-      {
-        path: "/art",
-        element: <Art />
-      },
-      {
-        path: "/code",
-        element: <Code />
-      },
-      {
-        path: "/gamedev",
-        element: <Gamedev />
-      }
-    ]
+    errorElement: <ErrorPage />
   },
   {
     path: "/website",

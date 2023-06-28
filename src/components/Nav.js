@@ -13,7 +13,7 @@ function Nav(){
     return(
         <div>
             <div id="nav-title">
-                <Link to={"/"}>Badi-Haki Martin</Link>
+                <Link to={"/website"}>Badi-Haki Martin</Link>
             </div>
             <ul>
                 <NavigationText link={"/website/about"} linkText={"About"} />
