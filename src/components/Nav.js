@@ -16,7 +16,6 @@ function Nav(){
                 <Link to={"/website"}>Badi-Haki Martin</Link>
             </div>
             <ul>
-                <NavigationText link={"/website/about"} linkText={"About"} />
                 <NavigationText link={"/website/art"} linkText={"Art"} />
                 <NavigationText link={"/website/code"} linkText={"Code"} />
                 <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />

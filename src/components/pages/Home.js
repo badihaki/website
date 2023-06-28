@@ -2,12 +2,18 @@ import React from "react";
 
 function Home(){
     return(
-        <div>
+        <div id="home">
             <h1>
-                Home Page
+                Personal Website of B. Haki Martin
             </h1>
+            <p className="intro">
+                Illustrator || Software Engineer || Game Developer
+            </p>
             <p>
-                Welcome to my homepage, yo!
+                Welcome to the personal website of Badi-Haki Martin.
+            </p>
+            <p>
+                I have experience with several technologies.
             </p>
         </div>
     )

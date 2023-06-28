@@ -42,6 +42,7 @@ code {
   
   gap: 2rem;
   padding: 0 15rem;
+  height: 70px;
 }
 
 #navigation a {
@@ -50,12 +51,15 @@ code {
 }
 
 #navigation ul {
-  list-style: none;
-  margin: 0;
-  text-align: inherit;
-  padding: 0;
-
   display: flex;
+  flex-flow: row;
+  list-style: none;
+  
+  text-align: inherit;
+  position: relative;
+  
+  margin: 0;
+  padding: 0;
   gap: 5rem;
 }
 
@@ -70,15 +74,46 @@ code {
   font-size: 1.5rem;
   font-weight: 785;
 
-  text-align: center;
-  margin: 0.5rem;
+  text-align: left;
+  margin: 0;
+  margin-top: 1rem;
+
+  position: relative;
 }
 
 #content {
   background-color: #1b1b1b;
+  background-image: url('./media/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
   color: whitesmoke;
   align-items: center;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+#home {
+  flex: 1;
+}
+
+#home > .intro {
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  height: 11.5px;
+}
+
+#home > p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding-bottom: 15%;
 }
 
 #error-page {
