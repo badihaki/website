@@ -180,6 +180,41 @@ p.panel {
   width: 200px;
 }
 
+@keyframes link-text {
+  from{
+    color: whitesmoke;
+  }
+  to{
+    color: goldenrod;
+  }
+}
+@keyframes reverse-link-text {
+  from{
+    color: goldenrod;
+  }
+  to{
+    color: whitesmoke;
+  }
+}
+#art > .panel > a:hover {
+  /*
+  animation-name: link-text;
+  animation-duration: 1.55s;
+  */
+  color: goldenrod;
+  font-size: 22px;
+}
+#art > .panel > a {
+  /*
+  animation-name: reverse-link-text;
+  animation-duration: 1.15 s;
+  */
+  color: whitesmoke;
+  transition: ease-in-out;
+  transition-duration: 0.85s;
+  font-size: 18px;
+}
+
 #error-page {
   background-color: whitesmoke;
   color: #333;
