@@ -88,6 +88,7 @@ code {
   background-color: #1b1b1b;
   background-image: url('./media/bg.png');
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -118,11 +119,65 @@ code {
 p.panel {
   border: 1px dotted rgb(105, 105, 105);
   background-color: rgba(17, 17, 17, 0.384);
+  
   margin: 75px 50px 0px;
-  width: 350px;
+  padding: 15px;
+  
+  width: 600px;
   
   font-size: 1.25rem ;
   position: relative;
+}
+
+#about > .scroll-container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /*scroll-padding-top: 30px;*/
+}
+
+#about > .scroll-container > .scroll-section {
+  scroll-snap-align: start;
+}
+
+#education {
+  margin-top: 50px;
+}
+#education > .panel {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 2px;
+}
+
+#experience {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#experience > .panel {
+  margin-top: 0px;
+}
+
+#skills-list {
+  display: inline-block;
+
+  position: fixed;
+  top: 185px;
+  right: 340px;
+
+  width: 300;
+}
+
+#skills-list h3 {
+  text-align: left;
+  margin: 0px 0px;
+}
+
+#skills-list li {
+  text-align: left;
+  list-style-position: inside;
+  list-style-type:square;
+  border: whitesmoke solid 1px;
+  margin: 5px 45px 10px 0px;
+  width: 200px;
 }
 
 #error-page {
