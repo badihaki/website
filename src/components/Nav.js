@@ -11,11 +11,11 @@ function Nav(){
     }
 
     return(
-        <div>
+        <div id="navigation">
             <div id="nav-title">
                 <Link to={"/website"}>Badi-Haki Martin</Link>
             </div>
-            <ul>
+            <ul id="nav-links">
                 <NavigationText link={"/website/about"} linkText={"About"} />
                 <NavigationText link={"/website/art"} linkText={"Art"} />
                 <NavigationText link={"/website/code"} linkText={"Code"} />

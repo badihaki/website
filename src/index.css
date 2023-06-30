@@ -46,6 +46,12 @@ code {
   gap: 2rem;
   padding: 0 15rem;
   height: 70px;
+  top: 0px;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  z-index: 1;
 }
 
 #navigation a {
@@ -59,9 +65,9 @@ code {
   list-style: none;
   
   text-align: inherit;
-  position: relative;
+  position: absolute;
   
-  margin: 0;
+  margin: 50px 300px 0px 0px ;
   padding: 0;
   gap: 5rem;
 }
@@ -78,10 +84,10 @@ code {
   font-weight: 785;
 
   text-align: left;
-  margin: 0;
+  margin: 10px -10px 55px -20px;
   margin-top: 1rem;
 
-  position: relative;
+  position: absolute;
 }
 
 #content {
@@ -98,6 +104,8 @@ code {
   display: flex;
   flex-flow: column;
   height: 90vh;
+  
+  z-index: 2;
 }
 
 #home {
@@ -107,13 +115,17 @@ code {
 
 .intro {
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 650;
+  letter-spacing: 5px;
+  color: goldenrod;
+  background-color: #333;
+
   text-align: center;
   margin: 0 50px 0;
   padding: 0;
-  background-color: #333;
+
   height: 11.5px;
-  position: relative;
+  position: static;
 }
 
 p.panel {
@@ -179,40 +191,73 @@ p.panel {
   margin: 5px 45px 10px 0px;
   width: 200px;
 }
-
-@keyframes link-text {
-  from{
-    color: whitesmoke;
-  }
-  to{
-    color: goldenrod;
-  }
-}
-@keyframes reverse-link-text {
-  from{
-    color: goldenrod;
-  }
-  to{
-    color: whitesmoke;
-  }
-}
 #art > .panel > a:hover {
-  /*
-  animation-name: link-text;
-  animation-duration: 1.55s;
-  */
   color: goldenrod;
   font-size: 22px;
 }
 #art > .panel > a {
-  /*
-  animation-name: reverse-link-text;
-  animation-duration: 1.15 s;
-  */
   color: whitesmoke;
   transition: ease-in-out;
   transition-duration: 0.85s;
   font-size: 18px;
+}
+
+#artwork-panel {
+  background-color: #33333371;
+  width: 55%;
+
+  left: 25%;
+
+  position: absolute;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.thumbnail {
+  border: 3.5px solid whitesmoke;
+  
+  padding: 5px;
+  margin: 5px 0px 0px 0px;
+
+  width: 200px;
+  height: 235px;
+
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+
+.thumbnail:hover {
+  border: 3.5px solid goldenrod;
+
+  padding: 10px;
+  width: 250px;
+  height: 230px;
+
+  transition-duration: 1s;
+  z-index: 2;
+
+  position: relative;
+}
+
+.thumbnail > img {
+  border: 3.5px solid goldenrod;
+  width: 20%;
+  filter: grayscale();
+  transition: ease-in-out;
+  transition-duration: .75s;
+}
+.thumbnail > img:hover {
+  border: 3.5px solid goldenrod;
+  width: 100px;
+  filter: none;
+  transition: ease-in-out;
+  transition-duration: .75s;
 }
 
 #error-page {
