@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.69b6c689.css",
-    "main.js": "/website/static/js/main.987670fb.js",
+    "main.css": "/website/static/css/main.2caf45fb.css",
+    "main.js": "/website/static/js/main.85b94556.js",
     "static/js/787.71e672d5.chunk.js": "/website/static/js/787.71e672d5.chunk.js",
+    "static/media/book-cover.jpg": "/website/static/media/book-cover.3abeaa31e3e06011ee55.jpg",
+    "static/media/therra.jpg": "/website/static/media/therra.f188562924c01f3962b0.jpg",
+    "static/media/aetherpunk-cowboy.jpg": "/website/static/media/aetherpunk-cowboy.ac68928deec10bf76f1c.jpg",
+    "static/media/soma-cruz.jpg": "/website/static/media/soma-cruz.867eccc0506ed6a27471.jpg",
+    "static/media/fox-warrior-lady.jpg": "/website/static/media/fox-warrior-lady.24306e5c7e2903f14b28.jpg",
+    "static/media/sowala.jpg": "/website/static/media/sowala.c4cf5693abf0ea48ecae.jpg",
     "static/media/bg.png": "/website/static/media/bg.8115bc05d595d2d928bd.png",
     "index.html": "/website/index.html",
-    "main.69b6c689.css.map": "/website/static/css/main.69b6c689.css.map",
-    "main.987670fb.js.map": "/website/static/js/main.987670fb.js.map",
+    "main.2caf45fb.css.map": "/website/static/css/main.2caf45fb.css.map",
+    "main.85b94556.js.map": "/website/static/js/main.85b94556.js.map",
     "787.71e672d5.chunk.js.map": "/website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b6c689.css",
-    "static/js/main.987670fb.js"
+    "static/css/main.2caf45fb.css",
+    "static/js/main.85b94556.js"
   ]
 }
