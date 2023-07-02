@@ -71,9 +71,7 @@ function Art(){
     }
 
     function openModalWindow(event){
-        console.log(event.target.alt)
         setSelectedArt(event.target.alt);
-        console.log(event.target);
         setOpenArtWindow(true);
     }
     function closeModalWindow(){
@@ -95,7 +93,7 @@ function Art(){
             </p>
             <br />
             <p className="panel">
-                Hover over an image. Click to view more details...
+                Hover over an image. Click an image to show the full version...
             </p>
             <div id="artwork-panel">
                 { artwork.map( (art)=><Thumbnail artwork={art} key={art.id} /> ) }
