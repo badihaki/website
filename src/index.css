@@ -68,6 +68,7 @@ code {
   position: absolute;
   
   margin: 50px 300px 0px 0px ;
+  right: 355px;
   padding: 0;
   gap: 5rem;
 }
@@ -79,15 +80,30 @@ code {
 }
 
 #nav-title {
+  position: absolute;
+
   color: whitesmoke;
   font-size: 1.5rem;
   font-weight: 785;
-
+  
   text-align: left;
-  margin: 10px -10px 55px -20px;
-  margin-top: 1rem;
+  word-spacing: 15px;
+  letter-spacing: 10px;
 
-  position: absolute;
+  margin-top: 1rem;
+  left: 285px;
+  bottom: 35px;
+
+  transition: 0.45s;
+}
+
+#nav-title:hover {
+  color: goldenrod;
+  background-color: #1b1b1b;
+
+  font-weight: 850;
+  word-spacing: 20px;
+  letter-spacing: 16px;
 }
 
 #content {
@@ -138,7 +154,9 @@ p.panel {
   width: 600px;
   
   font-size: 1.25rem ;
+  
   position: relative;
+  left: 0%;
 }
 
 #about > .scroll-container {
@@ -185,13 +203,21 @@ p.panel {
 #skills-list h3 {
   text-align: left;
   margin: 0px 0px;
+  letter-spacing: 2px;
+  color: goldenrod;
+  font-weight: 700;
 }
 
 #skills-list li {
   text-align: left;
   list-style-position: inside;
   list-style-type:square;
+
   border: whitesmoke solid 1px;
+  color: goldenrod;
+  font-weight: 550;
+  
+  padding: 10px;
   margin: 5px 45px 10px 0px;
   width: 200px;
 }
@@ -313,6 +339,20 @@ p.panel {
   filter: none;
   transition: ease-in-out;
   transition-duration: .75s;
+}
+
+#blog > ul {
+  position: absolute;
+  left: 23.25%;
+}
+
+#blog > ul > .blog-post {
+  border: goldenrod 2px solid;
+
+  list-style-type: none;;
+  
+  padding: 0px 15px 5px 15px;
+  margin: 0px 0px 0px 0px;
 }
 
 #error-page {

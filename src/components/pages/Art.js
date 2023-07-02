@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
 import BookCover from "../../media/artwork/book-cover.jpg";
 import AetherCowboy from "../../media/artwork/aetherpunk-cowboy.jpg";
 import FoxWarrior from "../../media/artwork/fox-warrior-lady.jpg";
@@ -9,7 +8,6 @@ import Therra from "../../media/artwork/therra.jpg";
 import Modal from "./art-sub-components/Modal";
 
 function Art(){
-    const baseURL = "./artwork/"
     const [isArtWindowOpen, setOpenArtWindow] = useState(false);
     const [selectedArt, setSelectedArt] = useState(null);
 

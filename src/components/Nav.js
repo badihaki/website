@@ -17,6 +17,7 @@ function Nav(){
             </div>
             <ul id="nav-links">
                 <NavigationText link={"/website/about"} linkText={"About"} />
+                <NavigationText link={"/website/blog"} linkText={"Blog"} />
                 <NavigationText link={"/website/art"} linkText={"Art"} />
                 <NavigationText link={"/website/code"} linkText={"Code"} />
                 <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />

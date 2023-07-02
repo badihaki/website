@@ -12,6 +12,7 @@ import About from './components/pages/About';
 import Art from './components/pages/Art';
 import Code from './components/pages/Code';
 import Gamedev from './components/pages/Gamedev';
+import Blog from './components/pages/Blog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/website/about",
         element: <About />
+      },
+      {
+        path: "/website/blog",
+        element: <Blog />
       },
       {
         path: "/website/art",

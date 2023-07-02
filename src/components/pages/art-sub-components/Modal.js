@@ -5,7 +5,7 @@ export default function Modal({ children, isOpen, closeModalFunc, art }){
     if(!isOpen) return null;
     return createPortal(
         <div id="art-window">
-            <img src={require(`../../../media/artwork/${art}`)} />
+            <img src={require(`../../../media/artwork/${art}`)} alt={art} />
             <br />
             <button onClick={closeModalFunc}>Close</button>
         </div>,
