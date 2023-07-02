@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.46c018ff.css",
-    "main.js": "/website/static/js/main.7e02f24e.js",
+    "main.css": "/website/static/css/main.92ad6fb8.css",
+    "main.js": "/website/static/js/main.9f2a3294.js",
     "static/js/787.71e672d5.chunk.js": "/website/static/js/787.71e672d5.chunk.js",
     "static/media/book-cover.jpg": "/website/static/media/book-cover.3abeaa31e3e06011ee55.jpg",
     "static/media/therra.jpg": "/website/static/media/therra.f188562924c01f3962b0.jpg",
@@ -11,12 +11,12 @@
     "static/media/sowala.jpg": "/website/static/media/sowala.c4cf5693abf0ea48ecae.jpg",
     "static/media/bg.png": "/website/static/media/bg.8115bc05d595d2d928bd.png",
     "index.html": "/website/index.html",
-    "main.46c018ff.css.map": "/website/static/css/main.46c018ff.css.map",
-    "main.7e02f24e.js.map": "/website/static/js/main.7e02f24e.js.map",
+    "main.92ad6fb8.css.map": "/website/static/css/main.92ad6fb8.css.map",
+    "main.9f2a3294.js.map": "/website/static/js/main.9f2a3294.js.map",
     "787.71e672d5.chunk.js.map": "/website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46c018ff.css",
-    "static/js/main.7e02f24e.js"
+    "static/css/main.92ad6fb8.css",
+    "static/js/main.9f2a3294.js"
   ]
 }
