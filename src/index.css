@@ -172,8 +172,12 @@ p.panel {
   display: inline-block;
 
   position: fixed;
+  /* 
   top: 185px;
   right: 340px;
+  */
+  left: 65%;
+  top: 23%;
 
   width: 300;
 }
@@ -217,6 +221,37 @@ p.panel {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
+}
+
+#art-window {
+  background-color: #333;
+  position: relative;
+  
+  height: 80vh;
+  width: 75vh;
+
+  top: 10%;
+  left: 35%;
+}
+
+#art-window > img {
+  height: 75vh;
+  z-index: 0;
+
+  position: absolute;
+  top: 2.5%;
+  left: 10%;
+}
+#art-window > button {
+  background-color: whitesmoke;
+  font-size: 22px;
+  color: black;
+  text-shadow: #1b1b1b;
+  font-weight: 600;
+
+  position: absolute;
+  top: 5%;
+  left: 80%;
 }
 
 .thumbnail {

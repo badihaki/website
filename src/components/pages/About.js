@@ -29,8 +29,8 @@ function About(){
                     <p className="panel">
                         I completed high school in Marietta, GA in 2008. Shortly thereafter, I enrolled at the Savannah
                         College of Art and Design and studied game development. Throughout college I supported myself by taking freelance
-                        illustration jobs, and when traditional schooling proved to be too expensive, I left to privately continue my
-                        studies privately, teaching myself various technologies such as C#, JavaScript, Unity 3D and Unreal Engine.
+                        illustration jobs, and when traditional schooling proved to be too expensive, I left, and privately continue my
+                        studies autodidactically, teaching myself various technologies such as C#, JavaScript, Unity 3D and Unreal Engine.
                     </p>
                     <p className="panel">
                         I recently graduated Flatiron School's Software Engineering program where I tightened up my JavaScript 
