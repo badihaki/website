@@ -164,7 +164,7 @@ code {
 #content {
   background-color: #1b1b1b;
   background-image: url('./media/bg.png');
-  background-position: center;
+  background-position: center 45px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -174,7 +174,8 @@ code {
   text-align: center;
   display: flex;
   flex-flow: column;
-  height: 90vh;
+  height: 100%;
+  width: 100%;
   
   z-index: 2;
 }
@@ -407,7 +408,48 @@ p.panel {
   list-style-type: none;;
   
   padding: 0px 15px 5px 15px;
-  margin: 0px 0px 0px 0px;
+  margin: 10px 0px 25px 0px;
+}
+
+#blog > ul > .blog-post > a {
+  color: whitesmoke;
+  background-color: #000000b0;
+
+  padding: 5px 10px 5px 10px;
+}
+
+#code > .panel {
+  right: 0px;
+}
+
+#code > ul {
+position: relative;
+
+  align-self: center;
+  list-style-type: none;
+
+  margin-left: 60px;
+}
+
+#code > ul > li {
+  padding: 0px 20px 20px 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  width: 500px;
+
+  border: goldenrod 2px solid;
+}
+
+#code > ul > li > p {
+  text-align: left;
+}
+
+#code > ul > li > a {
+  color: whitesmoke;
+  background-color: #000000b0;
+
+  padding: 5px 10px 5px 10px;
 }
 
 #error-page {

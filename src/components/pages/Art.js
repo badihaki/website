@@ -81,7 +81,7 @@ function Art(){
         <div id="art">
             <h1>Art</h1>
             <p className="intro">
-                A million worlds, birthed of one mind...
+                A million worlds, birthed of one mind
             </p>
             <p className="panel">
             Welcome to the gallery. This is a small selection of some of my best work. To see
@@ -91,7 +91,7 @@ function Art(){
             </p>
             <br />
             <p className="panel">
-                Hover over an image. Click an image to show the full version...
+                Hover over an image. Click an image to show the full version.
             </p>
             <div id="artwork-panel">
                 { artwork.map( (art)=><Thumbnail artwork={art} key={art.id} /> ) }
@@ -101,7 +101,6 @@ function Art(){
                 </div>
             </div>
             <Modal isOpen={isArtWindowOpen} closeModalFunc={closeModalWindow} art={selectedArt} >
-                Modal
             </Modal>
         </div>
     )
