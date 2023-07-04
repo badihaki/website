@@ -36,6 +36,7 @@ code {
 #navigation {
   background-color: #333;
   color: whitesmoke;
+  font-variant: small-caps;
 
   display: flex;
   justify-content: space-between;
@@ -67,16 +68,66 @@ code {
   text-align: inherit;
   position: absolute;
   
-  margin: 50px 300px 0px 0px ;
+  margin: 50px 705px 0px 0px;
+  bottom: 0px;
   right: 355px;
   padding: 0;
-  gap: 5rem;
+  gap: 35px;
+}
+
+.nav-link > a {
+  position: relative;
+  right: 10%;
+  bottom: 15%;
+  text-decoration: none;
 }
 
 #navigation li {
   background-color: #1b1b1b;
-  padding: 0.2rem;
+  padding: 3.75px;
   font-weight: 500;
+  letter-spacing: 1.75px;
+
+  transition: ease-in-out 0.15s;
+}  
+
+#navigation li:hover {
+  color: goldenrod;
+
+  letter-spacing: 4px;
+  font-weight: bold;
+
+  padding: -10px 1px 0px 1px;
+
+  transition: ease-in-out 0.45s;
+}
+
+#navigation li:active{
+  text-decoration:line-through;
+}
+
+#nav-badge > img {
+  background-color: #333;
+
+  position: absolute;
+  
+  color: whitesmoke;
+  
+  height: 50px;
+  width: 50px;
+  
+  right: 500px;
+  top: 20px;
+
+  transition: ease-in-out 0.35s;
+}
+
+#nav-badge > img:hover {
+  background-color: #1b1b1b;
+
+  content: url("./media/banner-open.png");
+
+  transition: ease-in-out 0.35s;
 }
 
 #nav-title {
@@ -95,7 +146,7 @@ code {
   bottom: 35px;
 
   transition: 0.45s;
-}
+}  
 
 #nav-title:hover {
   color: goldenrod;
@@ -104,6 +155,10 @@ code {
   font-weight: 850;
   word-spacing: 20px;
   letter-spacing: 16px;
+}
+
+#nav-title:active{
+  text-decoration:line-through;
 }
 
 #content {
@@ -361,8 +416,4 @@ p.panel {
   align-self: center;
   align-content: center;
   text-align: center;
-}
-
-.nav-link {
-  color: inherit;
 }

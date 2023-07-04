@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BannerClosed from "../media/banner-closed.png"
+import BannerOpen from  "../media/banner-open.png"
 
 function Nav(){
     function NavigationText({ link, linkText }){
@@ -22,6 +24,9 @@ function Nav(){
                 <NavigationText link={"/website/code"} linkText={"Code"} />
                 <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />
             </ul>
+            <div id="nav-badge">
+                <img src={BannerClosed} alt="Icon" />
+            </div>
         </div>
     )
 }
