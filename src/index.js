@@ -19,7 +19,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+    ]
   },
   {
     path: "/website",
@@ -51,6 +57,10 @@ const router = createBrowserRouter([
         element: <Gamedev />
       }
     ]
+  },
+  {
+    path: "*",
+    element: <Layout />
   }
 ])
 root.render(
