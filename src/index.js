@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -15,6 +15,7 @@ import Gamedev from './components/pages/Gamedev';
 import Blog from './components/pages/Blog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -63,6 +64,7 @@ const router = createBrowserRouter([
     element: <Layout />
   }
 ])
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

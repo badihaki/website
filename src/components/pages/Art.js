@@ -84,20 +84,23 @@ function Art(){
                 A million worlds, birthed of one mind
             </p>
             <p className="panel">
-            Welcome to the gallery. This is a small selection of some of my best work. To see
-            more of my work, please visit my 
-            <br />
-            <a href={"https://bhakim.artstation.com"} target="_blank" rel="noreferrer" >Full Portfolio</a>.
+            Welcome to the gallery. I have been drawing since I can remember, and started working for myself as a freelance illustrator 
+            when I turned 17. Since then, I have worked with a huge variety of creatives and visionaries. This is a small selection of some of my <span className="text-highlight"> best work</span>.
             </p>
             <br />
             <p className="panel">
-                Hover over an image. Click an image to show the full version.
+                Hover over an image. Click an image to show the full version. To see
+                more of my work, please visit my 
+                <br />
+                <a href={"https://bhakim.artstation.com"} target="_blank" rel="noreferrer" >Full Portfolio on Artstation</a>.
+                <br />
+                (Or just click the link in the top-right)
+                <br />
+                To contact me to learn more about what services I offer, please use the email icon on the top-right.
             </p>
             <div id="artwork-panel">
                 { artwork.map( (art)=><Thumbnail artwork={art} key={art.id} /> ) }
                 <div className="hide" id="art-window">
-                    {/* create a button that will give this div the classname of hide */}
-                    {/* put artwork components here */}
                 </div>
             </div>
             <Modal isOpen={isArtWindowOpen} closeModalFunc={closeModalWindow} art={selectedArt} />

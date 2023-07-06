@@ -25,8 +25,12 @@ function Blog(){
                 Nuts and bolts of how my mind works
             </p>
             <p className="panel">
-                A small collection of my writing. Hosted on Medium.
+                Below you will find a small sampling of my writing. I love writing down my ideas into little blog posts. When creating a blog post, 
+                I tend to do extra research on the task at hand. Doing so not only helps me convey my ideas and the subject more thoroughly, but 
+                also affords me the chance to become a true expert at what I am trying to teach.
             </p>
+            <p className="panel">I hope you enjoy the content below, and find it educational and fulfilling. My full blog is hosted on
+            <span className="text-highlight"> Medium</span>.</p>
             <ul>
                 { blogPosts.map(( post )=><BlogPost post={post} key={post.id} />) }
             </ul>

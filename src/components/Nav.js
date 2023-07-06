@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import BannerClosed from "../media/banner-closed.png";
 import LinkedIn from "../media/LI-In-Bug.png";
 import ArtStation from "../media/artstation-logo-white.png";
-import GitHub from "../media/github-mark-white.png"
+import GitHub from "../media/github-mark-white.png";
+import Gmail from "../media/gmail-logo.png"
 
 function Nav(){
     function NavigationText({ link, linkText }){
@@ -38,6 +39,9 @@ function Nav(){
                 </a>
                 <a href="https://github.com/badihaki" target="_blank" rel="noreferrer" >
                     <img className="github" src={GitHub} alt="GitHub" />
+                </a>
+                <a href="mailto:jojackblack@gmail.com" >
+                    <img className="gmail" src={Gmail} alt="Email me" />
                 </a>
             </div>
         </div>

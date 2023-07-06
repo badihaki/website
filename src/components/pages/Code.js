@@ -32,16 +32,16 @@ function Code(){
                 Building digital worlds and experiences
             </p>
             <p className="panel">
-                My first experience with coding was with the Microsoft XNA framework in 2007, giving me a strong foundation of C#. 
-                Since then, I've gained experience with programming languages and technology such as C++, JavaScript, HTML, SQL, 
-                Unity3D, Unreal, React and Rails.
+                My first experience with coding was with the <span className="text-highlight"> Microsoft XNA framework in 2007</span>, giving me a strong foundation of C#. 
+                Since then, I've gained experience with programming languages and technology such as <span className="text-highlight"> C++, JavaScript, HTML, SQL, 
+                Unity3D, Unreal, React and Rails</span>.
             </p>
             <p className="panel">
                 You could say I'm incredibly passionate about learning and utilizing new tech.
             </p>
             <p className="panel">
                 Here, you will find a list of projects, all publicly host on Github. Feel free to look through the projects and 
-                browse the repositories to your heart's content.
+                browse the repositories to your heart's content. My full GitHub is linked in the top-right.
             </p>
             <ul>
                 { posts.map( post => <CodePost post={post} key={post.id} /> ) }
