@@ -7,7 +7,7 @@ function CodePost({ post }){
             <p>
                 {post.description}
             </p>
-            <a href={post.link} target="_blank">Github Repo</a>
+            <a href={post.link} target="_blank" rel="noreferrer" >Github Repo</a>
         </li>
     )
 }

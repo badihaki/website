@@ -8,7 +8,7 @@ function BlogPost({ post }){
                 {post.date}
             </div>
             <p className="blog-post-snippet">{post.snippet}</p>
-            <a href={post.link} target="_blank" >Check out the full post!</a>
+            <a href={post.link} target="_blank" rel="noreferrer" >Check out the full post!</a>
         </li>
     )
 }

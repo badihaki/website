@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BannerClosed from "../media/banner-closed.png"
-import BannerOpen from  "../media/banner-open.png"
 
 function Nav(){
     function NavigationText({ link, linkText }){

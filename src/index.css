@@ -33,26 +33,33 @@ code {
     monospace;
 }
 
+#layout {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  height: 100vh;
+}
+
 #navigation {
   background-color: #333;
   color: whitesmoke;
   font-variant: small-caps;
 
-  display: flex;
   justify-content: space-between;
   
   align-items: center;
   text-align: center;
   
-  gap: 2rem;
-  padding: 0 15rem;
-  height: 70px;
+  height: 7.5%;
   top: 0px;
 
-  position: -webkit-sticky;
+  gap: 2rem;
+  padding: 0 15rem;
+
+  position: -webkit-sticky fixed;
   position: sticky;
 
-  z-index: 1;
+  z-index: 3;
 }
 
 #navigation a {
@@ -89,10 +96,11 @@ code {
   letter-spacing: 1.75px;
 
   transition: ease-in-out 0.15s;
-}  
+}
 
 #navigation li:hover {
   color: goldenrod;
+  border-radius: 50px;
 
   letter-spacing: 4px;
   font-weight: bold;
@@ -108,6 +116,7 @@ code {
 
 #nav-badge > img {
   background-color: #333;
+  border: #1b1b1b solid 2px;
 
   position: absolute;
   
@@ -124,6 +133,9 @@ code {
 
 #nav-badge > img:hover {
   background-color: #1b1b1b;
+  border: #1b1b1b solid 2px;
+  border-radius: 25px;
+  border-width: 5px;
 
   content: url("./media/banner-open.png");
 
@@ -155,6 +167,8 @@ code {
   font-weight: 850;
   word-spacing: 20px;
   letter-spacing: 16px;
+
+  border-radius: 50px;
 }
 
 #nav-title:active{
@@ -172,17 +186,19 @@ code {
   color: whitesmoke;
   align-items: center;
   text-align: center;
+  
   display: flex;
   flex-flow: column;
-  height: 100%;
+
+  height: 90%;
   width: 100%;
+  flex-grow: 1;
   
-  z-index: 2;
+  z-index: 1;
 }
 
 #home {
   flex: 1;
-  height: 100%;
 }
 
 .intro {
@@ -218,7 +234,6 @@ p.panel {
 #about > .scroll-container {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  /*scroll-padding-top: 30px;*/
 }
 
 #about > .scroll-container > .scroll-section {
@@ -314,20 +329,23 @@ p.panel {
 
   bottom: 5vh;
   left: 60vh;
+
+  z-index: 2;
 }
 
 #art-window:empty {
+  height: 0px;
   display: none;
 }
 
 #art-window > img {
   height: 95%;
-  z-index: 0;
+  z-index: 1;
 
   position: absolute;
   align-self: center;
   top: 2.5%;
-  left: 10%;
+  left: 5%;
 }
 #art-window > button {
   background-color: whitesmoke;
@@ -366,7 +384,7 @@ p.panel {
   height: 235px;
 
   transition: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 0.556s;
 }
 
 .thumbnail:hover {
@@ -376,7 +394,7 @@ p.panel {
   width: 250px;
   height: 230px;
 
-  transition-duration: 1s;
+  transition-duration: 0.25s;
   z-index: 2;
 
   position: relative;

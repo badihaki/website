@@ -87,7 +87,7 @@ function Art(){
             Welcome to the gallery. This is a small selection of some of my best work. To see
             more of my work, please visit my 
             <br />
-            <a href={"https://bhakim.artstation.com"} target="_blank" >Full Portfolio</a>.
+            <a href={"https://bhakim.artstation.com"} target="_blank" rel="noreferrer" >Full Portfolio</a>.
             </p>
             <br />
             <p className="panel">
@@ -100,8 +100,7 @@ function Art(){
                     {/* put artwork components here */}
                 </div>
             </div>
-            <Modal isOpen={isArtWindowOpen} closeModalFunc={closeModalWindow} art={selectedArt} >
-            </Modal>
+            <Modal isOpen={isArtWindowOpen} closeModalFunc={closeModalWindow} art={selectedArt} />
         </div>
     )
 }
