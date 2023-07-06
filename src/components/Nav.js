@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BannerClosed from "../media/banner-closed.png"
+import BannerClosed from "../media/banner-closed.png";
+import LinkedIn from "../media/LI-In-Bug.png";
+import ArtStation from "../media/artstation-logo-white.png";
+import GitHub from "../media/github-mark-white.png"
 
 function Nav(){
     function NavigationText({ link, linkText }){
@@ -25,6 +28,17 @@ function Nav(){
             </ul>
             <div id="nav-badge">
                 <img src={BannerClosed} alt="Icon" />
+            </div>
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/badi-haki-martin-565476145/" target="_blank" rel="noreferrer" >
+                    <img className="linkedin" src={LinkedIn} alt="LinkedIn" />
+                </a>
+                <a href="https://bhakim.artstation.com" target="_blank" rel="noreferrer" >
+                    <img className="artstation" src={ArtStation} alt="ArtStation" />
+                </a>
+                <a href="https://github.com/badihaki" target="_blank" rel="noreferrer" >
+                    <img className="github" src={GitHub} alt="GitHub" />
+                </a>
             </div>
         </div>
     )
