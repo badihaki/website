@@ -19,7 +19,8 @@ function Code(){
             id:2,
             title:"Baking With Internet People",
             description:"** Work in progress ** A baking-centered social media webapp built with React and Rails. Planned to be able to have users sign up and make photo and text posts centered around baking for beginners.",
-            link:"https://github.com/badihaki/bake-web"
+            link:"https://github.com/badihaki/bwif-frontend",
+            secondLink: "https://github.com/badihaki/bwif-backend"
         },
     ]
 

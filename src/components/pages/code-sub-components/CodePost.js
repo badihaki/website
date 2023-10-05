@@ -8,6 +8,7 @@ function CodePost({ post }){
                 {post.description}
             </p>
             <a href={post.link} target="_blank" rel="noreferrer" >Github Repo</a>
+            { post.secondLink? <span><br /><a href={post.secondLink} target="_blank" rel="noreferrer" >Backend Repo</a></span> : '' }
         </li>
     )
 }

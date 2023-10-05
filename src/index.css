@@ -523,6 +523,14 @@ p.panel {
   padding: 5px 10px 5px 10px;
 }
 
+#code > ul > li > span > a {
+  color: rgb(212, 229, 243);
+  background-color: #000000b0;
+
+  padding: 0px 10px 9px 10px;
+  margin-top: 10px;
+}
+
 #games-list {
   list-style-type: none;
   margin-top: 50px;
