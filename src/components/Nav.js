@@ -15,6 +15,11 @@ function Nav(){
         )
     }
 
+    function handleNavIconClickEvent(event){
+        console.log(event);
+        console.log("clicked nav bar!!");
+    }
+
     return(
         <div id="navigation">
             <div id="nav-title">
@@ -27,7 +32,7 @@ function Nav(){
                 <NavigationText link={"/website/code"} linkText={"Code"} />
                 <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />
             </ul>
-            <div id="nav-badge">
+            <div id="nav-badge" onClick={handleNavIconClickEvent}>
                 <img src={BannerClosed} alt="Icon" />
             </div>
             <div id="socials">
