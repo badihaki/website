@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8cc298a6.css",
+    "main.css": "/static/css/main.ac2d0967.css",
     "main.js": "/static/js/main.d8b3b6ae.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/book-cover.jpg": "/static/media/book-cover.3abeaa31e3e06011ee55.jpg",
@@ -14,12 +14,12 @@
     "static/media/banner-closed.png": "/static/media/banner-closed.4b6b59e92035a0556802.png",
     "static/media/artstation-logo-white.png": "/static/media/artstation-logo-white.1dac3a70920ae6bee7ac.png",
     "index.html": "/index.html",
-    "main.8cc298a6.css.map": "/static/css/main.8cc298a6.css.map",
+    "main.ac2d0967.css.map": "/static/css/main.ac2d0967.css.map",
     "main.d8b3b6ae.js.map": "/static/js/main.d8b3b6ae.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cc298a6.css",
+    "static/css/main.ac2d0967.css",
     "static/js/main.d8b3b6ae.js"
   ]
 }
