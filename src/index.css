@@ -574,19 +574,6 @@ p.panel {
   #nav-badge {
     display: inherit;
   }
-
-  #nav-title {
-    font-size: 1.2rem;
-    font-weight: 785;
-    
-    text-align: left;
-    word-spacing: 15px;
-    letter-spacing: 10px;
-
-    margin-top: 1rem;
-    left: 5px;
-    bottom: 5px;
-  }
   
   #nav-badge > img {
     background-color: #333;
@@ -605,8 +592,21 @@ p.panel {
     transition: ease-in-out 0.35s;
   }
 
-  #nav-links {
-    /*display: none; */
+  #nav-title {
+    font-size: 1.2rem;
+    font-weight: 785;
+    
+    text-align: left;
+    word-spacing: 15px;
+    letter-spacing: 10px;
+
+    margin-top: 1rem;
+    left: 5px;
+    bottom: 5px;
+  }
+
+  #navigation #nav-links {
+    display: none;
     flex-direction: column;
 
     position: absolute fixed;
@@ -616,11 +616,26 @@ p.panel {
     left: 0rem;
     right: 35rem;
     gap: 0rem;
+    width: 100%;
 
     background-color: #333;
   }
 
+  #navigation #nav-links.show {
+    display: inherit;
+  }
+
   #navigation #socials {
     display: none;
+
+    position: absolute fixed;
+    top: 14.25rem;
+    left: 5rem;
+    gap: 0rem;
+
+    background-color: #333;
+  }
+  #navigation #socials.show {
+    display: inherit;
   }
 }
