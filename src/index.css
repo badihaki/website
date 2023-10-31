@@ -442,18 +442,27 @@ p.panel {
   transition-duration: .75s;
 }
 
+#blog > .panel {
+  right: 0rem;
+}
+
 #blog > ul {
-  position: absolute;
-  left: 23.25%;
+  position: relative;
+  
+  align-self: center;
+  list-style-type: none;
+
+  margin-left: 60px;
 }
 
 #blog > ul > .blog-post {
   border: goldenrod 2px solid;
 
-  list-style-type: none;;
-  
-  padding: 0px 15px 5px 15px;
-  margin: 10px 0px 25px 0px;
+  padding: 0px 20px 20px 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  width: 500px;
 }
 
 #blog > ul > .blog-post > h3 {
@@ -471,7 +480,7 @@ p.panel {
 }
 
 #code > .panel {
-  right: 0px;
+  right: 0rem;
 }
 
 #code > ul {
@@ -570,6 +579,9 @@ p.panel {
   text-align: center;
 }
 
+/*
+    Below is for resolutions lower than 1220px in width
+*/
 @media (max-width: 1220px) {
   #nav-badge {
     display: inherit;
@@ -586,7 +598,7 @@ p.panel {
     height: 50px;
     width: 50px;
     
-    right: 50px;
+    right: 13.5rem;
     top: 20px;
 
     transition: ease-in-out 0.35s;
@@ -615,7 +627,6 @@ p.panel {
     top: 5rem;
     left: 0rem;
     right: 35rem;
-    gap: 0rem;
     width: 100%;
 
     background-color: #333;
@@ -627,15 +638,38 @@ p.panel {
 
   #navigation #socials {
     display: none;
+    flex-direction: column;
 
     position: absolute fixed;
-    top: 14.25rem;
-    left: 5rem;
-    gap: 0rem;
+    margin: 0px 0px 0px 0px;
+    left: 0rem;
+    gap: 1rem;
 
     background-color: #333;
   }
   #navigation #socials.show {
     display: inherit;
+  }
+
+  #skills-list {
+    position: inherit;
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    left: 6.25rem;
+  }
+/*
+    Below is for resolutions lower than 650px in width
+*/
+  @media (max-width: 650px) {
+    html {
+      font-size: x-small;
+    }
+    
+    #nav-badge > img {
+      right: 0.5rem;
+    }
   }
 }
