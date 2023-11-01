@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac2d0967.css",
-    "main.js": "/static/js/main.d8b3b6ae.js",
+    "main.css": "/static/css/main.61aceaae.css",
+    "main.js": "/static/js/main.d52ef4fb.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/book-cover.jpg": "/static/media/book-cover.3abeaa31e3e06011ee55.jpg",
     "static/media/therra.jpg": "/static/media/therra.f188562924c01f3962b0.jpg",
@@ -14,12 +14,12 @@
     "static/media/banner-closed.png": "/static/media/banner-closed.4b6b59e92035a0556802.png",
     "static/media/artstation-logo-white.png": "/static/media/artstation-logo-white.1dac3a70920ae6bee7ac.png",
     "index.html": "/index.html",
-    "main.ac2d0967.css.map": "/static/css/main.ac2d0967.css.map",
-    "main.d8b3b6ae.js.map": "/static/js/main.d8b3b6ae.js.map",
+    "main.61aceaae.css.map": "/static/css/main.61aceaae.css.map",
+    "main.d52ef4fb.js.map": "/static/js/main.d52ef4fb.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac2d0967.css",
-    "static/js/main.d8b3b6ae.js"
+    "static/css/main.61aceaae.css",
+    "static/js/main.d52ef4fb.js"
   ]
 }
