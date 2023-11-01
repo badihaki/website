@@ -251,15 +251,6 @@ p.panel {
   left: 0%;
 }
 
-#about > .scroll-container {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-#about > .scroll-container > .scroll-section {
-  scroll-snap-align: start;
-}
-
 #education {
   margin-top: 50px;
 }
@@ -583,6 +574,7 @@ p.panel {
     Below is for resolutions lower than 1220px in width
 */
 @media (max-width: 1220px) {
+
   #nav-badge {
     display: inherit;
   }
@@ -602,6 +594,10 @@ p.panel {
     top: 20px;
 
     transition: ease-in-out 0.35s;
+  }
+
+  #nav-badge > img.open-menu {
+    right: 0.5rem;
   }
 
   #nav-title {
@@ -670,6 +666,43 @@ p.panel {
     
     #nav-badge > img {
       right: 0.5rem;
+    }
+
+    .intro {
+      letter-spacing: .25rem;
+      margin: 0 0rem 0;
+    }
+
+    p.panel {
+      margin: 1rem 15rem 1rem 0rem;
+      padding-left: 25rem;
+      padding-right: 10rem;
+    }
+    
+    #navigation #socials {
+      background-color: #1b1b1b;
+      flex-direction: column-reverse;
+      top: 15.65rem;
+    }
+
+    #skills-list {
+      position: inherit;
+      align-self: center;
+      align-content: center;
+
+      width: 50%;
+  
+      display: grid;
+      grid-template-columns: none;
+
+      margin: auto
+    }
+
+    #skills-list li {
+      text-align: center;
+
+      position: relative;
+      margin-left: 5rem;
     }
   }
 }

@@ -35,8 +35,8 @@ function Nav(){
                 <NavigationText link={"/website/code"} linkText={"Code"} />
                 <NavigationText link={"/website/gamedev"} linkText={"Gamedev"} />
             </ul>
-            <div id="nav-badge" onClick={handleNavIconClickEvent}>
-                <img src={BannerClosed} alt="Icon" />
+            <div id="nav-badge" onClick={handleNavIconClickEvent} >
+                <img src={BannerClosed} alt="Icon" className={showMenu ? "open-menu" : ""} />
             </div>
             <div id="socials" className={showMenu? "show" : ""}>
                 <a href="https://www.linkedin.com/in/badi-haki-martin-565476145/" target="_blank" rel="noreferrer" >
