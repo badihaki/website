@@ -535,7 +535,7 @@ p.panel {
   margin: 25px 0px 10px 50px;
 
   width: 500px;
-  height: 200px;
+  height: 50%;
 }
 
 #games-list > li > h3 {
@@ -703,6 +703,34 @@ p.panel {
 
       position: relative;
       margin-left: 5rem;
+    }
+
+    #blog > ul {
+      margin: auto;
+    }
+
+    #blog > ul > .blog-post {
+      margin: 1rem auto auto auto;
+      width: 50%;
+    }
+
+    #code > ul {
+      margin: auto;
+    }
+
+    #code > ul > li {
+      margin: 1rem auto auto auto;
+      width: 50%;
+    }
+
+    #games-list {
+      margin: auto;
+    }
+
+    #games-list > li {
+      margin: 1rem auto auto auto;
+      width: 50%;
+      height: 10%;
     }
   }
 }
