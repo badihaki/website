@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import icon from '@/lib/_Images/banner-open.png'
+import icon from '@/lib/Images/banner-open.png'
 import Link from 'next/link'
 
 function HomeIcon() {

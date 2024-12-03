@@ -1,5 +1,10 @@
 "use client"
 
+import Art from "@/lib/Components/Home/Art";
+import Contact from "@/lib/Components/Home/Contact";
+import GameDev from "@/lib/Components/Home/GameDev";
+import Landing from "@/lib/Components/Home/Landing";
+import WebDev from "@/lib/Components/Home/WebDev";
 import { Tabs } from "@mantine/core";
 import { useState } from "react";
 
@@ -7,17 +12,31 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<string|null>("home");
 
   return (
-    <div className="grid grid-rows-[0px_1fr_175px] items-center justify-items-center gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start min-h-screen">
+    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-auto">
+      <main className="relative flex flex-col gap-8 row-start-2 items-center min-h-screen top-10">
         <Tabs value={activeTab} onChange={setActiveTab}>
           <Tabs.List>
-            <Tabs.Tab value="home">Home Tab</Tabs.Tab>
-            <Tabs.Tab value="webdev">Web Dev Tab</Tabs.Tab>
-            <Tabs.Tab value="gamedev">Gamedev Tab</Tabs.Tab>
+            <Tabs.Tab value="home">Home</Tabs.Tab>
+            <Tabs.Tab value="webdev">WebDev</Tabs.Tab>
+            <Tabs.Tab value="gamedev">Gamedev</Tabs.Tab>
+            <Tabs.Tab value="art">Art</Tabs.Tab>
+            <Tabs.Tab value="contact">Contact Me</Tabs.Tab>
           </Tabs.List>
-          <Tabs.Panel value="home">home context</Tabs.Panel>
-          <Tabs.Panel value="webdev">web context</Tabs.Panel>
-          <Tabs.Panel value="gamedev">gamedev context</Tabs.Panel>
+          <Tabs.Panel value="home">
+            <Landing />
+          </Tabs.Panel>
+          <Tabs.Panel value="webdev">
+            <WebDev />
+          </Tabs.Panel>
+          <Tabs.Panel value="gamedev">
+            <GameDev />
+          </Tabs.Panel>
+          <Tabs.Panel value="art">
+            <Art />
+          </Tabs.Panel>
+          <Tabs.Panel value="contact">
+            <Contact />
+          </Tabs.Panel>
         </Tabs>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

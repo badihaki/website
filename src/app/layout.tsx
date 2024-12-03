@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import HomeIcon from "@/lib/Navigation/HomeIcon";
+import HomeIcon from "@/lib/Components/Navigation/HomeIcon";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
