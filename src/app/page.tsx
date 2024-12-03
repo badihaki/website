@@ -12,33 +12,33 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<string|null>("home");
 
   return (
-    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-auto">
-      <main className="relative flex flex-col gap-8 row-start-2 items-center min-h-screen top-10">
+    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
         <Tabs value={activeTab} onChange={setActiveTab}>
-          <Tabs.List>
-            <Tabs.Tab value="home">Home</Tabs.Tab>
-            <Tabs.Tab value="webdev">WebDev</Tabs.Tab>
-            <Tabs.Tab value="gamedev">Gamedev</Tabs.Tab>
-            <Tabs.Tab value="art">Art</Tabs.Tab>
-            <Tabs.Tab value="contact">Contact Me</Tabs.Tab>
+          <Tabs.List className="fixed top-6 text-center items-center justify-center mx-auto">
+              <Tabs.Tab value="home">Home</Tabs.Tab>
+              <Tabs.Tab value="webdev">WebDev</Tabs.Tab>
+              <Tabs.Tab value="gamedev">Gamedev</Tabs.Tab>
+              <Tabs.Tab value="art">Art</Tabs.Tab>
+              <Tabs.Tab value="contact">Contact Me</Tabs.Tab>
           </Tabs.List>
-          <Tabs.Panel value="home">
-            <Landing />
-          </Tabs.Panel>
-          <Tabs.Panel value="webdev">
-            <WebDev />
-          </Tabs.Panel>
-          <Tabs.Panel value="gamedev">
-            <GameDev />
-          </Tabs.Panel>
-          <Tabs.Panel value="art">
-            <Art />
-          </Tabs.Panel>
-          <Tabs.Panel value="contact">
-            <Contact />
-          </Tabs.Panel>
+          <main className="relative flex flex-col gap-8 row-start-2 items-center min-h-screen top-10">
+            <Tabs.Panel value="home">
+              <Landing />
+            </Tabs.Panel>
+            <Tabs.Panel value="webdev">
+              <WebDev />
+            </Tabs.Panel>
+            <Tabs.Panel value="gamedev">
+              <GameDev />
+            </Tabs.Panel>
+            <Tabs.Panel value="art">
+              <Art />
+            </Tabs.Panel>
+            <Tabs.Panel value="contact">
+              <Contact />
+            </Tabs.Panel>
+          </main>
         </Tabs>
-      </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         {/* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
