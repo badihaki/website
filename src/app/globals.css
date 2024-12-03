@@ -11,7 +11,7 @@
   :root {
     /* --background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(2,0,36,1) 56%, rgba(52,30,122,1) 67%, rgba(31,93,152,1) 92%); */
     --background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(2,0,36,1) 60%, rgba(52,30,122,1) 95%, rgba(31,93,152,1) 100%);
-    --foreground: #ededed;
+    --foreground: #F8F8FF;
   }
 }
 

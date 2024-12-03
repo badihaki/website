@@ -13,10 +13,10 @@ export default function Home() {
 
   return (
     <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
-      <main className="flex flex-col justify-center min-h-screen top-10">
-      <Tabs value={activeTab} onChange={setActiveTab} className="text-center items-center justify-center">
+      <main className="relative flex flex-col min-h-screen top-10 max-w-[65%] min-w-[65%] text-center">
+      <Tabs value={activeTab} onChange={setActiveTab} color="rgba(17, 16, 18, 1)" variant="pills" radius="lg" className="text-center items-center justify-center">
         <Tabs.List>
-            <Tabs.Tab value="home">Home</Tabs.Tab>
+            <Tabs.Tab value="home" className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mr-4 hover:font-semibold hover:tracking-widest">Home</Tabs.Tab>
             <Tabs.Tab value="webdev">WebDev</Tabs.Tab>
             <Tabs.Tab value="gamedev">Gamedev</Tabs.Tab>
             <Tabs.Tab value="art">Art</Tabs.Tab>
