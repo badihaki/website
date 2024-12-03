@@ -14,13 +14,17 @@ export default function Home() {
   return (
     <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
       <main className="relative flex flex-col min-h-screen top-10 max-w-[65%] min-w-[65%] text-center">
-      <Tabs value={activeTab} onChange={setActiveTab} color="rgba(17, 16, 18, 1)" variant="pills" radius="lg" className="text-center items-center justify-center">
+      <Tabs value={activeTab} onChange={setActiveTab} color="#FFD700" variant="pills" radius="lg" className="text-center items-center justify-center">
         <Tabs.List>
             <Tabs.Tab value="home" className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mr-4 hover:font-semibold hover:tracking-widest">Home</Tabs.Tab>
-            <Tabs.Tab value="webdev">WebDev</Tabs.Tab>
-            <Tabs.Tab value="gamedev">Gamedev</Tabs.Tab>
-            <Tabs.Tab value="art">Art</Tabs.Tab>
-            <Tabs.Tab value="contact">Contact Me</Tabs.Tab>
+            <Tabs.Tab value="webdev"
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">WebDev</Tabs.Tab>
+            <Tabs.Tab value="gamedev"
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Gamedev</Tabs.Tab>
+            <Tabs.Tab value="art"
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Art</Tabs.Tab>
+            <Tabs.Tab value="contact"
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:ml-4 hover:font-semibold hover:tracking-widest">Contact Me</Tabs.Tab>
         </Tabs.List>
           <Tabs.Panel value="home">
             <Landing />
