@@ -21,9 +21,18 @@ function Landing() {
             I have experience working with front-end UI libraries and frameworks such as React, NextJS and Angular in order to build performant web apps that help guide users through the experience. I hope you enjoy going through my portfolio of web applications, which you can find in the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>WebDev</span> section of this website.
           </p>
         </div>
-        <p className='ease-in-out transition-all duration-700 relative font-san bg-[#341e7a] bg-opacity-15 hover:bg-opacity-35 px-2 py-1 my-2 rounded-lg hover:rounded-full'>
-          However, I started my jounrey into code as a hobbyist game developer. 
-        </p>
+        <div className='flex flex-row mt-14 mb-6'>
+          <p className='ease-in-out transition-all duration-700 relative font-san bg-[#341e7a] bg-opacity-15 hover:bg-opacity-35 px-2 py-1 my-2 rounded-lg hover:rounded-full'>
+            However, I started my jounrey into code as a hobbyist game developer. I've been coding using the C# coding language and the Unity Engine and .NET libraries. You can find that work in the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>GameDev</span> section.
+          </p>
+          <aside className='relative basis-1/2 mx-4'>
+              <Box 
+              className='border border-[#ffffff] shadow-xl bg-gray-900 bg-opacity-45 p-2'>
+                If you need to contact me, feel free to use the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>Contact Me</span> section of this page.
+              </Box>
+          </aside>
+
+        </div>
     </div>
   )
 }
