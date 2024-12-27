@@ -1,3 +1,8 @@
+//#region Global Imports
+import { StaticImageData } from "next/image"
+//#endregion
+
+//#region Images
 // color images
 import aetherPunk from "@/lib/Images/Art/aetherpunk-cowboy-02.jpg"
 import foxLady from "@/lib/Images/Art/fox warrior lady.jpg"
@@ -10,7 +15,6 @@ import batman from "@/lib/Images/Art/bw/batman-bust-sketch.jpg"
 import lady from "@/lib/Images/Art/bw/female-portrait-001.jpg"
 import staticShock from "@/lib/Images/Art/bw/static-pencils.jpg"
 import swordsWoman from "@/lib/Images/Art/bw/swordewoman.jpg"
-import { StaticImageData } from "next/image"
 
 export const images:{
     id: number;
@@ -68,3 +72,47 @@ export const images:{
       image:swordsWoman
     },
   ]
+  //#endregion
+
+  //#region  Web Projects
+  export const webdevProjects:{
+    id:number,
+    title:string,
+    description:string,
+    links:{
+        project:string,
+        demo:string|null,
+        deployment:string|null
+    },
+    techStack: string[]
+  }[] = [
+    {
+        id:0,
+        title:"Software Engineer Study Guide",
+        description:"This is an app software engineers can use as a study guide. The app presents itself as a repository of interview questions in the form of study cards that users can dynamically add to. Users can also sort questions based on tags in order to better cater to their studying needs.",
+        links:{
+            project:"https://github.com/badihaki/studyapp",
+            demo:null,
+            deployment:null
+        },
+        techStack: [
+            "NextJS", "MongoDB", "Tailwind CSS"
+        ]
+    },
+    {
+        id:1,
+        title:"Software Engineer Study Guide",
+        description:"This is an app software engineers can use as a study guide. The app presents itself as a repository of interview questions in the form of study cards that users can dynamically add to. Users can also sort questions based on tags in order to better cater to their studying needs.",
+        links:{
+            project:"https://github.com/badihaki/studyapp",
+            demo:null,
+            deployment:null
+        },
+        techStack: [
+            "NextJS", "MongoDB", "Tailwind CSS"
+        ]
+    },
+  ];
+//#endregion
+
+  // end
