@@ -7,7 +7,7 @@ function Landing() {
           Welcome to my personal website and portfolio. My name is Badi-Haki Martin, and I&apos;m a full-stack web developer, game developer and illustrator living in Atlanta, Georgia. I&apos;ve been coding for well over ten years on a variety of personal projects, in addition to over a year working professionally as a full-stack developer, designing and maintaining a variety of projects in the tech training field. I have always loved computers, technology, and all the knowledge, freedom and connectivity that the internet brings us, and I&apos;m proud to contribute to projects that help others.
         </p>
         <p className='ease-in-out transition-all duration-700 relative font-san bg-[#341e7a] bg-opacity-15 hover:bg-opacity-35 px-2 py-1 my-2 rounded-lg hover:rounded-full'>
-          I also have over ten years experience as a professional freelance illustrator and comic artist. I&apos;ve worked with a variety of clients, including musical artists, burgeoning enterprises and independent film makers. Ever since I could hold a pencil, I have been passionate about bringing dreams to life through my art, and have been honored to do it professionally for my clients.
+          I also have over ten years experience as a professional freelance illustrator and comic artist. I&apos;ve worked with a variety of clients, including musical artists, burgeoning enterprises and independent film makers. Ever since I could hold a pencil, I have been passionate about bringing dreams to life through my art, and have been honored to do it professionally for my clients
         </p>
         <div className='flex flex-row mt-14 mb-6'>
           <aside className='relative basis-1/2 mx-4'>
@@ -20,9 +20,18 @@ function Landing() {
             I have experience working with front-end UI libraries and frameworks such as React, NextJS and Angular in order to build performant web apps that help guide users through the experience. I hope you enjoy going through my portfolio of web applications, which you can find in the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>WebDev</span> section of this website.
           </p>
         </div>
-        <p className='ease-in-out transition-all duration-700 relative font-san bg-[#341e7a] bg-opacity-15 hover:bg-opacity-35 px-2 py-1 my-2 rounded-lg hover:rounded-full'>
-          However, I started my jounrey into code as a hobbyist game developer. 
-        </p>
+        <div className='flex flex-row mt-14 mb-6'>
+          <p className='ease-in-out transition-all duration-700 relative font-san bg-[#341e7a] bg-opacity-15 hover:bg-opacity-35 px-2 py-1 my-2 rounded-lg hover:rounded-full'>
+            However, I started my jounrey into code as a hobbyist game developer. I've been coding using the C# coding language and the Unity Engine and .NET libraries. You can find that work in the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>GameDev</span> section.
+          </p>
+          <aside className='relative basis-1/2 mx-4'>
+              <Box 
+              className='border border-[#ffffff] shadow-xl bg-gray-900 bg-opacity-45 p-2'>
+                If you need to contact me, feel free to use the <span className='bg-slate-200 bg-opacity-20 text-zinc-50 px-2 rounded-lg'>Contact Me</span> section of this page.
+              </Box>
+          </aside>
+
+        </div>
     </div>
   )
 }

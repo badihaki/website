@@ -17,11 +17,11 @@ export default function Home() {
         <Tabs.List>
             <Tabs.Tab value="home" className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mr-4 hover:font-semibold hover:tracking-widest">Home</Tabs.Tab>
             <Tabs.Tab value="webdev"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">WebDev</Tabs.Tab>
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Web Development</Tabs.Tab>
             <Tabs.Tab value="gamedev"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Gamedev</Tabs.Tab>
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Game Development</Tabs.Tab>
             <Tabs.Tab value="art"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Art</Tabs.Tab>
+            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Artwork</Tabs.Tab>
             <Tabs.Tab value="contact"
             className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:ml-4 hover:font-semibold hover:tracking-widest">Contact Me</Tabs.Tab>
         </Tabs.List>
