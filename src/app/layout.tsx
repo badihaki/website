@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import '@mantine/core/styles.css';
 import HomeIcon from "@/lib/Components/Navigation/HomeIcon";
 import NavBar from "@/lib/Components/Navigation/NavBar";
 
@@ -34,12 +33,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <div className="flex flex-1">
-            
+        <div className="flex flex-1">
+          <div className="flex flex-auto flex-row h-32 pt-10 content-center">
             <HomeIcon />
             <NavBar />
           </div>
-          {children}
+          <div>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

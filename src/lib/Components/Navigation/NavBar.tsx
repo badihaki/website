@@ -2,8 +2,8 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div className='basis-10/12'>
-      <ul className='grid grid-cols-4'>
+    <div className='grow content-center'>
+      <ul className='grid grid-cols-4 font-semibold tracking-wide text-xl'>
         <li>Webdev</li>
         <li>Gamedev</li>
         <li>Art</li>
