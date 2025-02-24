@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import closedIcon from '@/lib/Images/banner-closed.png'
 import openIcon from '@/lib/Images/banner-open.png'
+import Link from 'next/link'
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -11,17 +12,19 @@ function NavBar() {
   // let canClickButton: boolean;
 
   function OnClickMenuButton(event: React.MouseEvent<HTMLElement>) {
-    console.log(canClickButton);
     if (canClickButton === true) {
       setMenuButtonActive(false);
-      console.log('cant click nig');
       setTimeout(() => {
         setMenuButtonActive(true);
-        console.log('can click again');
       }, 500);
       setMenuOpen(!menuOpen);
     }
   }
+  
+  function OnClickNavButton(event: React.MouseEvent<HTMLElement>){
+    setMenuOpen(!menuOpen);    
+  }
+
 
   return (
     <nav id='navigation-menu' className={`z-50 fixed h-screen transition-all ease-in-out duration-300 ${menuOpen ? 'bg-black w-[65%]' : "bg-transparent w-0"}`}>
@@ -30,7 +33,12 @@ function NavBar() {
 
       <ul className={`grid grid-rows-5 font-semibold tracking-wide text-xl text-center h-1/2 relative top-[5%]
         ${menuOpen ? "visible" : "hidden"}`}>
-        <li>Webdev</li>
+        <Link href={"/"} onClick={OnClickNavButton}>
+          <li>Home</li>
+        </Link>
+        <Link href={"/webdev"} onClick={OnClickNavButton}>
+          <li>Webdev</li>
+        </Link>
         <li>Gamedev</li>
         <li>Art</li>
         <li>Contact</li>

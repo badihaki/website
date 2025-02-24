@@ -1,6 +1,7 @@
 export default function Home() {
   return (
-    <main id="home" className="relative top-10 text-center p-2">
+    <main id="home" className="relative top-16 text-center p-2">
+
       <div id="home-container" className="flex flex-col gap-11">
         <div id="home-intro" className="relative w-fit mx-auto p-4 text-4xl font-semibold rounded-3xl">
           Official Website of Badi-Haki Martin
