@@ -41,7 +41,7 @@ function NavBar() {
       <Image id='menu-button' src={menuOpen ? openIcon : closedIcon} alt={`Open/Close navigation menu`} onClick={OnClickMenuButton} className={`transition-all ease-in-out p-2 relative rounded-full min-w-12 duration-500 cursor-pointer
         ${menuOpen ? `max-w-40 bg-transparent border-b-8 border-[#FFD700] top-2 left-11` : `max-w-20 bg-gradient-to-t from-[#FFD700] from-5% to-transparent to-35%`} top-2 left-2`} />
 
-      <ul className={`grid grid-rows-5 gap-2 h-1/2 relative top-[5%]
+      <ul className={`grid grid-rows-5 gap-2 h-1/2 relative top-[5%] w-[60%]
         ${menuOpen ? "visible duration-1000" : "hidden duration-500"}`}>
         {
           linkComponents
