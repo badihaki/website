@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 function HomeIcon() {
   return (
-      <Link href={"/"} className='transition-all ease-in-out duration-700 justify-center items-center'>
-        <Image src={icon} alt='Icon to take you home'
-          className='w-fit max-w-[4px]' />
-      </Link>
+    <Link href={"/"} className='transition-all ease-in-out duration-700 justify-center items-center'>
+      <Image src={icon} alt='Icon to take you home'
+        className='w-fit max-w-[4px]' />
+    </Link>
   )
 }
 
