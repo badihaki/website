@@ -1,47 +1,21 @@
-"use client"
-
-// import Art from "@/lib/Components/Home/Art";
-// import Contact from "@/lib/Components/Home/Contact";
-// import GameDev from "@/lib/Components/Home/GameDev";
-// import Landing from "@/lib/Components/Home/Landing";
-// import WebDev from "@/lib/Components/Home/WebDev";
-// import { useState } from "react";
-
 export default function Home() {
-  // const [activeTab, setActiveTab] = useState<string|null>("home");
-
   return (
-    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
-      <main className="relative flex flex-col min-h-screen top-10 max-w-[65%] min-w-[65%] text-center">
-      {/* <Tabs value={activeTab} onChange={setActiveTab} color="#FFD700" variant="pills" radius="lg" className="text-center items-center justify-center">
-        <Tabs.List>
-            <Tabs.Tab value="home" className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mr-4 hover:font-semibold hover:tracking-widest">Home</Tabs.Tab>
-            <Tabs.Tab value="webdev"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Web Development</Tabs.Tab>
-            <Tabs.Tab value="gamedev"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Game Development</Tabs.Tab>
-            <Tabs.Tab value="art"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:mx-4 hover:font-semibold hover:tracking-widest">Artwork</Tabs.Tab>
-            <Tabs.Tab value="contact"
-            className="transition-all duration-500 ease-in-out tracking-tighter hover:bg-[#FFD700] hover:text-[#060202] hover:ml-4 hover:font-semibold hover:tracking-widest">Contact Me</Tabs.Tab>
-        </Tabs.List>
-          <Tabs.Panel value="home">
-            <Landing />
-          </Tabs.Panel>
-          <Tabs.Panel value="webdev">
-            <WebDev />
-          </Tabs.Panel>
-          <Tabs.Panel value="gamedev">
-            <GameDev />
-          </Tabs.Panel>
-          <Tabs.Panel value="art">
-            <Art />
-          </Tabs.Panel>
-          <Tabs.Panel value="contact">
-            <Contact />
-          </Tabs.Panel>
-      </Tabs> */}
-      </main>
-    </div>
+    <main id="home" className="bg-blue-400 relative top-10 text-center p-2">
+      <div id="home-container" className="flex flex-col gap-11">
+        <div id="home-intro" className="bg-green-600 relative w-fit mx-auto p-4 text-4xl font-semibold rounded-3xl">
+          Official Website of Badi-Haki Martin
+        </div>
+      </div>
+
+      <div id="home-info" className="flex flex-col gap-4 mt-6">
+        <div id="home-details-1" className="bg-green-600 flex-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="home-details-2" className="bg-green-600 flex-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+
+    </main>
   );
 }

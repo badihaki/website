@@ -1,9 +1,10 @@
 import React from 'react'
+import HomeIcon from './HomeIcon'
 
 function NavBar() {
   return (
-    <div className='grow content-center'>
-      <ul className='grid grid-cols-4 font-semibold tracking-wide text-xl'>
+    <div className='content-center'>
+      <ul className='grid grid-cols-5 font-semibold tracking-wide text-xl bg-red-500]'>
         <li>Webdev</li>
         <li>Gamedev</li>
         <li>Art</li>
