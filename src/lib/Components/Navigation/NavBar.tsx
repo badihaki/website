@@ -37,7 +37,7 @@ function NavBar() {
 
   // component below
   return (
-    <nav id='navigation-menu' className={`z-50 fixed h-screen transition-all ease-in-out ${menuOpen ? 'bg-gradient-to-r from-black from-85% to-transparent w-[65%] duration-300' : "bg-transparent w-0"} duration-700`}>
+    <nav id='navigation-menu' className={`z-50 fixed h-screen transition-all ease-in-out ${menuOpen ? 'bg-gradient-to-r from-black from-85% to-transparent w-[65%] duration-500' : "bg-transparent w-0"} duration-700`}>
       <Image id='menu-button' src={menuOpen ? openIcon : closedIcon} alt={`Open/Close navigation menu`} onClick={OnClickMenuButton} className={`transition-all ease-in-out p-2 relative rounded-full min-w-12 duration-500 cursor-pointer
         ${menuOpen ? `max-w-40 bg-transparent border-b-8 border-[#FFD700] top-2 left-11` : `max-w-20 bg-gradient-to-t from-[#FFD700] from-5% to-transparent to-35%`} top-2 left-2`} />
 
