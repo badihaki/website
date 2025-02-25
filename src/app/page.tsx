@@ -1,5 +1,3 @@
-import { Span } from "next/dist/trace";
-
 export default function Home() {
   return (
     <main id="home" className="flex flex-col relative top-16 text-center p-2">

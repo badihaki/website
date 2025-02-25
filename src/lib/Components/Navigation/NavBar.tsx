@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import closedIcon from '@/lib/Images/banner-closed.png'
 import openIcon from '@/lib/Images/banner-open.png'
-import Link from 'next/link'
 import LinkComponent from './LinkComponent'
 import { links } from './navLinks'
 
@@ -15,7 +14,7 @@ function NavBar() {
 
   // component functionality
   // menu button functionality
-  function OnClickMenuButton(event: React.MouseEvent<HTMLElement>) {
+  function OnClickMenuButton() {
     if (canClickButton === true) {
       setMenuButtonActive(false);
       setTimeout(() => {
@@ -26,7 +25,7 @@ function NavBar() {
   }
 
   // navigation button functionality
-  function OnClickNavButton(event: React.MouseEvent<HTMLElement>) {
+  function OnClickNavButton() {
     setMenuOpen(!menuOpen);
   }
 
