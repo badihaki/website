@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main id="home" className="flex flex-col relative top-16 text-center p-2">
@@ -11,16 +13,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="home-info-container" className="flex flex-col gap-4 -mt-6 px-4 pt-2 pb-4 rounded-lg">
-        <p id="home-details-1" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2 indent-3 text-base/">
-          <span className="font-semibold font-serif text-6xl border-b-2 border-slate-400 rounded-2xl relative right-1 bottom-2">W</span>
-          elcome to my personal website. My name is Badi-Haki Martin, but please call me Haki.
+      <div id="home-info-container" className="flex flex-col gap-4 md:gap-10 -mt-6 px-4 pt-2 pb-4 rounded-lg md:max-w-[70%] place-self-center">
+        <p id="home-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3">
+          <span className="font-semibold font-serif text-6xl border-b-2 border-[#FFD700] rounded-2xl relative right-1 bottom-2">W</span>
+          elcome to my personal website. My name is Badi-Haki Martin, but please call me Haki. I am a multidisciplinary talent, working in tech as a full-stack software developer and in the entertainment field as an illustrator and designer. My passion and skills come together with my biggest pursuit towards the games industry. This website serves as a showcase to my work.
         </p>
-        <p id="home-details-2" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        <p id="home-webdev" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
+          I've been working as a full-stack web developer for a little over 3 years now. You can check out my <Link href={"/webdev"} className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Web Development</Link> work to see a small sampling of live projects, work-related projects, and smaller work from my time at <Link href={"https://flatironschool.com/"} target="_blank" className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Flatiron School</Link>.
         </p>
-        <p id="home-details-3" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p id="home-gamedev" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
+          I have experience as a hobbyist game developer, working on projects using a variety of engines, frameworks programming languages and tools. You could say, my adventure in software development as a whole started with my interest in game dev. While I've been at it for over 15 years, my <Link href={"/gamedev"} className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Games Showcase</Link> will have information on my more recent projects.
+        </p>
+        <p id="home-art" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
+          And finally, my passion, my soul, my <Link href={"/art"} className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Artwork</Link>. I largely attribute this to where it all began, and would love to guide you through the journey and offer a small sampling of illustrations and concept art that I've created over the years.
         </p>
       </div>
 
