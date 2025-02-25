@@ -1,24 +1,21 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import '@mantine/core/styles.css';
-import HomeIcon from "@/lib/Components/Navigation/HomeIcon";
 import NavBar from "@/lib/Components/Navigation/NavBar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+const geistSans = Geist({
   variable: "--font-geist-sans",
-  weight: "100 900",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  weight: "100 900",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Badi-Haki Martin || React, Angular, Node, .NET",
-  description: "Personal Website of B. Haki Martin",
+  title: "Badi-Haki Martin's Website",
+  description: "Badi-Haki Martin || Full-stack Developer, Game Developer,  Illustrator",
 };
 
 export default function RootLayout({
@@ -27,19 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-      </head>
-      
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <div className="flex flex-1">
-            
-            <HomeIcon />
             <NavBar />
-          </div>
+        <div className="">
           {children}
+        </div>
+
       </body>
     </html>
   );
