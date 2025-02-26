@@ -36,7 +36,7 @@ function ProjectsContainer() {
                 className='bg-slate-200 bg-opacity-20 rounded-full'/>
             </button>
 
-            <div id='projects-container' className={`grid grid-cols-2 gap-y-4 transition-all ease-in-out duration-500
+            <div id='projects-container' className={`grid grid-cols-2 gap-y-4 gap-x-2 transition-all ease-in-out duration-500
                 ${folderOpen ? "h-fit" : "h-full"}`}>
                 {projectComponents}
             </div>
