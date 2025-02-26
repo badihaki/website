@@ -19,7 +19,7 @@ function WebDev() {
         </p>
 
         <p id="webdev-info-2" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
-          At Flatiron School I was exposed to a variety of tools, including component-based UI libraries with React, CSS frameworks suchs as SCSS and SASS, and backend technology like PostgreSQL and Ruby on Rails. I could finally call myself a 'full-stack' software engineer, and since graduating from the bootcamp I have been engaged in a variety freelance and in-office projects.
+          At Flatiron School I was exposed to a variety of tools, including component-based UI libraries with React, CSS frameworks suchs as SCSS and SASS, and backend technology like PostgreSQL and Ruby on Rails. I could finally call myself a &apos;full-stack&apos; software engineer, and since graduating from the bootcamp I have been engaged in a variety freelance and in-office projects.
         </p>
       </div>
 
