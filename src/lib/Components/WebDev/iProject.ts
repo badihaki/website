@@ -3,11 +3,7 @@ export interface iProject{
     title:string,
     information:{
         summary:string|null,
-        bulletPoints:{
-            point1:string|null,
-            point2:string|null,
-            point3:string|null,
-        }|null
+        bulletPoints:string[]|null
     },
     links:{
         gitHub:string|null,

@@ -1,5 +1,6 @@
 import React from 'react'
 import { iProject } from './iProject'
+import Link from 'next/link';
 
 function ProjectCardComponent(props: {
     project: iProject,
@@ -10,7 +11,7 @@ function ProjectCardComponent(props: {
     const tag: string = title.toLowerCase().slice(0, 7).replace(" ", "-");
 
     return (
-        <div id={`project-${Id}`}
+        <Link id={`project-${Id}`} href={`/webdev/${Id}`}
             className={`max-w-full border-2 border-slate-200 px-3 py-2 place-self-center rounded-2xl
             ${folderOpen ? "visible h-fit" : "hidden h-0"}`}>
 
@@ -22,7 +23,7 @@ function ProjectCardComponent(props: {
                 {summary ? summary : ""}
             </div>
 
-        </div>
+        </Link>
     )
 }
 
