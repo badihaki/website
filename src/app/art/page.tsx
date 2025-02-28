@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import OrignalArtContainer from '@/lib/Components/Art/OrignalArtContainer'
 import React from 'react'
 
 function Art() {
@@ -25,6 +25,10 @@ function Art() {
           Below you will find a sampling of work, from rough concept pieces to illustration. All of the artwork is created and owned by me, with rights to certain pieces granted to the specific clients that commissioned them.
         </p>
       </div>
+
+      <section id='original-art'>
+        <OrignalArtContainer />
+      </section>
 
     </main>
   )

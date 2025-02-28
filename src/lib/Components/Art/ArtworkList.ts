@@ -13,7 +13,8 @@ export const originalArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
@@ -23,7 +24,8 @@ export const originalArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
@@ -33,7 +35,8 @@ export const originalArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
@@ -43,7 +46,8 @@ export const originalArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
@@ -53,50 +57,59 @@ export const originalArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
 ];
 
+import batman from '@/lib/Images/Art/bw/batman-bust-sketch.jpg';
+import staticShock from '@/lib/Images/Art/bw/static-pencils.jpg';
+import windu from '@/lib/Images/Art/macewinduu.jpg';
+import somaCruz from '@/lib/Images/Art/soma-cruz-portfolio.jpg';
 export const fanartList: iArtwork[] = [
     {
         id: 0,
         title: "Batman Bust",
-        image: null,
+        image: batman,
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
         id: 1,
         title: "Static Shock",
-        image: null,
+        image: staticShock,
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
         id: 2,
         title: "Mace Windu",
-        image: null,
+        image: windu,
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
     {
         id: 3,
         title: "Soma Cruz",
-        image: null,
+        image: somaCruz,
         date: null,
         information: {
             description: null,
-            client: null
+            client: null,
+            altText: null,
         }
     },
 ]

@@ -23,9 +23,9 @@ function WebDev() {
         </p>
       </div>
 
-      <div id='webdev-projects'>
+      <section id='webdev-projects'>
         <ProjectsContainer />
-      </div>
+      </section>
 
     </main>
   )

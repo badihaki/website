@@ -12,7 +12,7 @@ function ProjectCardComponent(props: {
 
     return (
         <Link id={`project-${Id}`} href={`/webdev/${Id}`}
-            className={`max-w-full border-2 border-slate-200 px-3 py-2 place-self-center rounded-2xl
+            className={`w-full sm:w-[70%] border-2 border-slate-200 px-3 py-2 place-self-center rounded-2xl 
             ${folderOpen ? "visible h-fit" : "hidden h-0"}`}>
 
             <div id={`${tag}-title`} className='uppercase text-lg'>
