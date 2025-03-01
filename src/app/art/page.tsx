@@ -1,4 +1,4 @@
-import OrignalArtContainer from '@/lib/Components/Art/OrignalArtContainer'
+import ArtContainer from '@/lib/Components/Art/ArtContainer'
 import React from 'react'
 
 function Art() {
@@ -24,10 +24,13 @@ function Art() {
         <p id="art-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3">
           Below you will find a sampling of work, from rough concept pieces to illustration. All of the artwork is created and owned by me, with rights to certain pieces granted to the specific clients that commissioned them.
         </p>
+        <p id="art-instructions" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3">
+          Just tap or click on an image to view more information.
+        </p>
       </div>
 
       <section id='original-art'>
-        <OrignalArtContainer />
+        <ArtContainer />
       </section>
 
     </main>

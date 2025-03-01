@@ -1,6 +1,6 @@
 "use client"
 
-import { originalArtworkList } from '@/lib/Components/Art/ArtworkList';
+import { ArtworkList } from '@/lib/Components/Art/ArtworkList';
 import { iArtwork } from '@/lib/Components/Art/iArtwork';
 import BackBtnOverlay from '@/lib/Components/Navigation/BackBtnOverlayComponent';
 import Image from 'next/image';
@@ -10,8 +10,33 @@ import React from 'react'
 function ArtworkDetails() {
     const params = useParams<{ id: string }>();
     const { id } = params;
-    const art: iArtwork | undefined = originalArtworkList.find(piece => Number(id) === piece.id);
+    const art: iArtwork | undefined = ArtworkList.find(piece => Number(id) === piece.id);
     const tag: string | undefined = art?.title.toLowerCase().slice(0, 7).replace(" ", "-");
+
+    function ArtDescription() {
+        const descriptions = art?.information.description?.map(description => {
+            return (
+                <li key={description.replace(" ", "-")} className=' border-l-2 border-l-slate-200 border-b-2 border-b-slate-200 rounded-3xl mx-auto px-4 pt-1'>
+                    {description}
+                </li>
+            )
+        })
+        return (
+            <ul id='art-description' className='my-4 md:my-10 flex flex-col gap-4 md:gap-8'>
+                {
+                    art?.information.client ?
+                        <li className='col-span-2 border-2 border-slate-200 w-fit mx-auto rounded-3xl px-2 py-1'>
+                            {
+                                art.information.client
+                            }
+                        </li>
+                        :
+                        ""
+                }
+                {descriptions}
+            </ul>
+        )
+    }
 
     return (
         <main id={`${art != undefined ? `${tag}-details` : `no-art-details`}`} className="flex flex-col relative top-16 text-center p-2">
@@ -28,12 +53,18 @@ function ArtworkDetails() {
                             </div>
                         </section>
 
-                        <Image id='art-image' src={art.image} className='max-w-full' alt={art.information.altText ? art.information.altText : "Image"} />
+                        <Image id='art-image' src={art.image} className='max-w-full mx-auto' alt={art.information.altText ? art.information.altText : "Image"} />
 
                         <section id='artwork-information'>
                             {
                                 art.date ?
                                     <div id='art-date'>{art.date.toString()}</div>
+                                    :
+                                    ""
+                            }
+                            {
+                                art.information.description ?
+                                    <ArtDescription />
                                     :
                                     ""
                             }
