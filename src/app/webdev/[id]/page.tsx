@@ -8,9 +8,6 @@ import { useParams } from 'next/navigation';
 import React from 'react'
 
 function Page() {
-    // const projectInfo:()=>iProject|undefined = ()=>{
-    //     return webdevProjects.find(project => id === project.Id);
-    // }
     const params = useParams<{ id: string }>();
     const { id } = params;
     const projectInfo: iProject | undefined = webdevProjects.find(project => Number(id) === project.Id);
