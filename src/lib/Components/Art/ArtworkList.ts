@@ -17,7 +17,7 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
-                "A fox warrior riding a purple panther",
+                "A fox warrior riding a purple panther.",
                 "I've always loved anthropomorphic animal characters, like Star Fox and Sonic the Hedgehog. This is kind of my homage to characters like that.",
                 "Made in Clip Studio Paint",
             ],
@@ -33,6 +33,7 @@ export const ArtworkList: iArtwork[] = [
         information: {
             description: [
                 "Powered by the souls of his ancestors, the lone Cowboy roams the desert looking for his parents' killer - his older brother!",
+                "Character design for a cancelled video game.",
                 "Made in Clip Studio Paint",
             ],
             client: "Personal Work",
@@ -62,6 +63,8 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "Morning practice using my new WACOM tablet, using my neighbor as a model.",
+                "Made in Photoshop",
             ],
             client: "Personal Work",
             altText: null,
@@ -74,6 +77,9 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "A fantasy swordsmaster, a woman as deadly as she is beautiful.",
+                "Character design for a cancelled video game.",
+                "Made in Clip Studio Paint",
             ],
             client: "Personal Work",
             altText: null,
@@ -86,6 +92,8 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "Morning practice, trying to redesign Batman's cowl.",
+                "Made in Clip Studio Paint",
             ],
             client: "Personal Work",
             altText: null,
@@ -98,8 +106,11 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "Morning practice, trying to redesign the classic Dwayne McDuffie character, Static from Static Shock.",
+                "Created for the now defunct Project: Rooftop website and comic art collective.",
+                "Made in Clip Studio Paint",
             ],
-            client: "Personal Work",
+            client: "Project: Rooftop",
             altText: null,
         }
     },
@@ -110,6 +121,8 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "Morning practice, Star Wars fanart of Mace Windu.",
+                "We all know he survived Order 66, Mr. Jackson. The real question is, what does he look like?",
             ],
             client: "Personal Work",
             altText: null,
@@ -122,6 +135,7 @@ export const ArtworkList: iArtwork[] = [
         date: null,
         information: {
             description: [
+                "Fanart for the Castlevania series, featuring Soma Cruz, one of the protagonists from the games.",
             ],
             client: "Personal Work",
             altText: null,
