@@ -29,8 +29,8 @@ function ProjectsContainer() {
     }
 
     return (
-        <div id='projects-folder' className='flex flex-col gap-4'>
-            <button id='projects-folder-btn' onClick={OnFolderBtnElementClick} className={`transition-all ease-in-out duration-500 flex-1 grid grid-flow-col gap-2 mx-auto mt-6 mb-2 px-2 hover:px-6 pt-1 hover:py-2 rounded-2xl ${folderOpen ? "outline outline-2 outline-slate-200": "border-b-2 border-[#FFD700]"}`}>
+        <div id='projects-folder' className='flex flex-col gap-4 place-items-center'>
+            <button id='projects-folder-btn' onClick={OnFolderBtnElementClick} className={`transition-all ease-in-out duration-500 flex-1 grid grid-flow-col gap-2 mx-auto mt-6 mb-2 px-2 hover:px-6 pt-1 hover:py-2 rounded-2xl text-2xl tracking-wide hover:tracking-widest ${folderOpen ? "outline outline-2 outline-slate-200": "border-b-2 border-[#FFD700]"}`}>
                 {folderOpen ? " Close " : " Open "} Projects
                 <Image src={folderOpen ? openIcon : closedIcon} alt={folderOpen ? "click to close projects folder" : "click to open projects folder"}
                 className='bg-slate-200 bg-opacity-20 rounded-full'/>

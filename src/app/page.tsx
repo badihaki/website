@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import profile from "@/lib/Images/Profiles/profile-sml.png"
 
 export default function Home() {
   return (
@@ -13,11 +15,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="home-info-container" className="flex flex-col gap-4 md:gap-10 -mt-6 px-4 pt-2 pb-4 rounded-lg md:max-w-[70%] place-self-center">
-        <p id="home-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3">
-          <span className="font-semibold font-serif text-6xl border-b-2 border-[#FFD700] rounded-2xl relative right-1 bottom-2">W</span>
-          elcome to my personal website. My name is Badi-Haki Martin, but please call me Haki. I am a multidisciplinary talent, working in tech as a full-stack software developer and in the entertainment field as an illustrator and designer. My passion and skills come together with my biggest pursuit towards the games industry. This website serves as a showcase to my work.
-        </p>
+      <div id="home-info-container" className="flex flex-col gap-4 sm:gap-x-10 -mt-6 px-4 pt-2 pb-4 rounded-lg md:max-w-[70%] place-self-center">
+        <section id="welcome" className="transition-all ease-in-out duration-300 flex flex-col sm:flex-row gap-6">
+          <Image src={profile} alt="profile-picture of the man, himself, B. Haki Martin, smiling and welcoming" className="rounded-full sm:rounded-3xl w-[75%] sm:w-[35%] mx-auto my-auto" />
+
+          <p id="home-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3 md:max-w-[65%]">
+            <span className="font-semibold font-serif text-6xl border-b-2 border-[#FFD700] rounded-2xl relative right-1 bottom-2">W</span>
+            elcome to my personal website. My name is Badi-Haki Martin, but please call me Haki. I am a multidisciplinary talent, working in tech as a full-stack software developer and in the entertainment field as an illustrator and designer. My passion and skills come together with my biggest pursuit towards the games industry. This website serves as a showcase to my work.
+          </p>
+        </section>
+
 
         <p id="home-webdev" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 rounded-xl mt-2">
           I&apos;ve been working as a full-stack web developer for a little over 3 years now. You can check out my <Link href={"/webdev"} className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Web Development</Link> work to see a small sampling of live projects, work-related projects, and smaller work from my time at <Link href={"https://flatironschool.com/"} target="_blank" className="transition-all duration-300 ease-in-out text-slate-400 hover:text-slate-200 no-underline hover:underline text-base hover:text-lg">Flatiron School</Link>.
