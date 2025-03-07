@@ -9,25 +9,33 @@ function PanelsContainer() {
 
   const handlePanelClicked: MouseEventHandler<HTMLDivElement> = (event: React.MouseEvent<HTMLDivElement>) => {
     const target: HTMLDivElement = event.target as HTMLDivElement;
+    console.log(target.id);
+    console.log(!isNaN(Number(target.id)));
     if (!isNaN(Number(target.id))) {
       const divId = Number(target.id);
-      console.log("has a number: " + divId);
+      console.log(`div id is ${divId}`);
       setActivePanel(divId);
     }
     else {
-      console.log("not a number");
-      console.log(target);
       setActivePanel(null);
     }
     event.stopPropagation();
   }
-  const gamesList = games.map(game => <ProjectPanelComponent key={game.id} game={game} currentOpen={activePanel} />)
+
+  const handleClickOnPanel = (panelId:number|null) => {
+    setActivePanel(panelId);
+  }
+
+  const gamesList = games.map(game => <ProjectPanelComponent key={game.id} game={game} currentOpen={activePanel} handlePanelClicked={handleClickOnPanel} />)
 
 
   return (
     <div>
       Games
-      <div id='games-list' onClick={handlePanelClicked} className='border-t-4 border-b-8 border-[#FFD700] rounded-full mx-auto mb-10 py-10'>
+      {/* <div id='games-list' onClick={handlePanelClicked} className='border-t-4 border-b-8 border-[#FFD700] rounded-full mx-auto mb-10 py-10'>
+        {gamesList}
+      </div> */}
+      <div id='games-list' className='border-t-4 border-b-8 border-[#FFD700] rounded-full mx-auto mb-10 py-10'>
         {gamesList}
       </div>
     </div>
