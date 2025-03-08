@@ -13,7 +13,7 @@ function ProjectPanelComponent(props: {
     const { game, currentOpen, handlePanelClicked } = props;
 
     const handleOnClick: MouseEventHandler<HTMLDivElement> = () => {
-        if(canOpenPanel){
+        if (canOpenPanel) {
             if (currentOpen === game.id) {
                 handlePanelClicked(null);
                 setPanelOpen(false);
@@ -26,7 +26,7 @@ function ProjectPanelComponent(props: {
         }
     }
 
-    function controlClickEvent():void{
+    function controlClickEvent(): void {
         setCanOpen(false);
         setTimeout(() => {
             setCanOpen(true);
