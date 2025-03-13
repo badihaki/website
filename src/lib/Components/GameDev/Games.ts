@@ -7,6 +7,7 @@ export const games: iGame[] = [
         information: {
             description: [
                 "A 3-D deck-building action-rogue-lite I am developing as my first full release on Steam.",
+                "The game revolves around the player using a deck of cards to augment their character's natural abilities. The deck consists of different weapons to equip, spells to shoot and minions to summon.",
             ],
             year: null
         },

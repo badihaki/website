@@ -43,11 +43,11 @@ function ProjectPanelComponent(props: {
                     "border-2 border-slate-200 max-w-[50%] rounded-full px-4 py-1"
                 }`}>
 
-            <h5 className={`transition-all ease-in-out duration-300 mx-auto w-fit rounded-full cursor-pointer font-semibold ${
+            <h5 className={`transition-all ease-in-out duration-300 mx-auto rounded-full cursor-pointer font-semibold ${
                 currentOpen === game.id ?
-                `border-l-2 border-b-4 border-[#FFD700] bg-black py-1 px-2 my-2 tracking-widest`
+                `border-l-2 border-b-4 border-[#FFD700] bg-black py-1 px-2 my-2 tracking-widest w-fit`
                 :
-                `p-1 tracking-wider`
+                `p-1 tracking-wider w-full`
             }`} onClick={handleOnClick}>
                 {game.title}
             </h5>
