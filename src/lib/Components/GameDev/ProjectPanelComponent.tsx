@@ -12,8 +12,6 @@ function ProjectPanelComponent(props: {
     const [canOpenPanel, setCanOpen] = useState<boolean>(true);
     const { game, currentOpen, handlePanelClicked } = props;
     
-    /* @typescript-eslint/no-unused-vars */
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleOnClick: MouseEventHandler<HTMLDivElement> = () => {
         if (canOpenPanel) {
             if (currentOpen === game.id) {
@@ -26,6 +24,7 @@ function ProjectPanelComponent(props: {
             setPanelOpen(true);
             controlClickEvent();
         }
+        return MouseEvent;
     }
 
     function controlClickEvent(): void {
