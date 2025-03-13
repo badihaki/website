@@ -24,7 +24,6 @@ function ProjectPanelComponent(props: {
             setPanelOpen(true);
             controlClickEvent();
         }
-        return MouseEvent;
     }
 
     function controlClickEvent(): void {
