@@ -16,6 +16,10 @@ function GameDev() {
           <span className="font-semibold font-serif text-6xl border-b-2 border-[#FFD700] rounded-2xl relative bottom-1">G</span>
           aming has been a big part of my life since childhood, bringing me lifelong friendships and useful interpersonal and planning skills. It was only a matter of time until the wonders I witnessed in these virtual worlds inspired me to create my own.
         </p>
+        
+        <p id="gamedev-info-2" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3">
+          Click on a title to learn more about the project.
+        </p>
       </div>
 
       <PanelsContainer />

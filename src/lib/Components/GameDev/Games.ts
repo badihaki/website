@@ -3,6 +3,23 @@ import { iGame } from "./iGame";
 export const games: iGame[] = [
     {
         id: 0,
+        title: "Endless Aether Starfall",
+        information: {
+            description: [
+                "A 3-D deck-building action-rogue-lite I am developing as my first full release on Steam.",
+            ],
+            year: null
+        },
+        links: [
+            {
+                title:"Devlog 0",
+                href:"https://youtu.be/i2kIsExwqUU?si=eOSwvXDWAgtrhVGK"
+            }
+        ],
+        images: null
+    },
+    {
+        id: 1,
         title: "Tarantula",
         information: {
             description: [
@@ -20,7 +37,7 @@ export const games: iGame[] = [
         images: null
     },
     {
-        id: 1,
+        id: 2,
         title: "OverArmor Rivals",
         information: {
             description: [
@@ -39,7 +56,7 @@ export const games: iGame[] = [
         images: null
     },
     {
-        id: 2,
+        id: 3,
         title: "The Eldritch and the Iron",
         information: {
             description: [
