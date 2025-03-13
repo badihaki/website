@@ -1,6 +1,5 @@
 "use client"
 
-/* @typescript-eslint/no-unused-vars */
 import React, { MouseEventHandler, useState } from 'react'
 import { iGame } from './iGame';
 
@@ -12,7 +11,9 @@ function ProjectPanelComponent(props: {
     const [panelOpen, setPanelOpen] = useState<boolean>(false);
     const [canOpenPanel, setCanOpen] = useState<boolean>(true);
     const { game, currentOpen, handlePanelClicked } = props;
-
+    
+    /* @typescript-eslint/no-unused-vars */
+    // eslint-disable-next-line no-unused-vars
     const handleOnClick: MouseEventHandler<HTMLDivElement> = () => {
         if (canOpenPanel) {
             if (currentOpen === game.id) {
