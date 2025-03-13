@@ -15,11 +15,8 @@ function PanelsContainer() {
 
 
   return (
-    <div>
-      Games
-      <div id='games-list' className='border-t-4 border-b-8 border-[#FFD700] rounded-full mx-auto mb-10 py-10'>
-        {gamesList}
-      </div>
+    <div id='games-list' className='transition-all duration-300 ease-in-out border-r-4 border-b-8 border-[#FFD700] rounded-full mx-auto w-full md:w-[50%] mb-10 mt-6 py-4 grid grid-cols-1 gap-y-4'>
+      {gamesList}
     </div>
   )
 }

@@ -1,5 +1,6 @@
 "use client"
 
+/* @typescript-eslint/no-unused-vars */
 import React, { MouseEventHandler, useState } from 'react'
 import { iGame } from './iGame';
 
@@ -35,22 +36,30 @@ function ProjectPanelComponent(props: {
 
     return (
         <div id={game.id.toString()} onClick={handleOnClick}
-            className={`mx-auto max-h-fit rounded-full ${panelOpen ?
-                "bg-slate-200 bg-opacity-25 p-6 max-w-[85%]"
-                :
-                "border-2 border-slate-200 max-w-[50%]"
+            className={`mx-auto w-fit md:w-[45%] rounded-full px-4 py-1 place-items-center
+                ${panelOpen ?
+                    "bg-slate-200 bg-opacity-25 p-6 max-w-[85%]"
+                    :
+                    "border-2 border-slate-200 max-w-[50%]"
                 }`}>
 
-            <h5>
+            <h5 className='p-1'>
                 {game.title}
             </h5>
 
-            <section id={`${game.id.toString}-info`} className={
+            {
                 panelOpen ?
-                    'visible' : 'hidden'
-            }>
-                {game.information.description}
-            </section>
+                    <section id={`${game.id.toString}-info`} className={`transition-all ease-in-out duration-500
+                ${panelOpen ?
+                            'visible h-fit'
+                            :
+                            'hidden h-[0%] overflow-hidden'
+                        }`}>
+                        {game.information.description}
+                    </section>
+                    :
+                    ""
+            }
         </div>
     )
 }
