@@ -13,9 +13,15 @@ export const games: iGame[] = [
         },
         links: [
             {
+                id:"0",
                 title:"Devlog 0",
                 href:"https://youtu.be/i2kIsExwqUU?si=eOSwvXDWAgtrhVGK"
-            }
+            },
+            {
+                id:"1",
+                title:"Devlog 1",
+                href:"https://youtu.be/i2kIsExwqUU?si=eOSwvXDWAgtrhVGK"
+            },
         ],
         images: null
     },
@@ -31,6 +37,7 @@ export const games: iGame[] = [
         },
         links: [
             {
+                id:"0",
                 title:"Itch.io Page",
                 href:"https://badihaki.itch.io/tarantula"
             }
@@ -50,6 +57,7 @@ export const games: iGame[] = [
         },
         links: [
             {
+                id:"0",
                 title:"Itch.io Page",
                 href:"https://badihaki.itch.io/overarmor-rivals"
             }
@@ -68,6 +76,7 @@ export const games: iGame[] = [
         },
         links: [
             {
+                id:"0",
                 title:"Itch.io Page",
                 href:"https://badihaki.itch.io/the-eldritch-and-the-iron"
             }

@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image"
 
 interface gameLink{
+    id:string,
     title:string,
     href:string,
 }

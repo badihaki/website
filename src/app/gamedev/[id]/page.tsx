@@ -23,7 +23,7 @@ function GamePage() {
     })
     const links: React.JSX.Element[] | undefined = gameData?.links?.map(link => {
         return (
-            <Link href={link.href} target='_blank' >{link.title}</Link>
+            <Link key={link.id} href={link.href} target='_blank' >{link.title}</Link>
         )
     })
 
@@ -56,7 +56,7 @@ function GamePage() {
                                 Notable Links
                             </h5>
 
-                            <ul id='links-list' className='my-2'>
+                            <ul id='links-list' className='my-2 grid grid-cols-1 gap-4'>
                                 {links}
                             </ul>
                         </div>
