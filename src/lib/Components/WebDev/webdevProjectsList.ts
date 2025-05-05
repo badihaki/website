@@ -55,4 +55,23 @@ export const webdevProjects: iProject[] = [
             youtube: null,
         }
     },
+    {
+        Id: 3,
+        title: "Zarephath Village",
+        information: {
+            summary: "I created the official website for Zarephath Village, Inc, Christian non-profit organization dedicated to helping survivors of domestic abuse. * Because of the nature of this project, there is no Github link *",
+            bulletPoints: [
+                "I worked closely with the client to create a wireframe in Figma to fully design the user experience before moving to code, as well as redesign their logo and consult on color scheme and website content.",
+                "I made the front-end UI using NextJS (powered by React) and Tailwind CSS. React allowed me to create a reusable library of components to help speed-up development. With Tailwind CSS, I made the website fully-responsive and was able to implement small animations using the built-in API.",
+                "All components and compiled views were testing extensively with a variety of tools, including Jest to test the code and Deque Axe tools for testing accessibility.",
+                "I handled all steps of deployment, from acquiring and setting-up a DNS provider and webhost."
+            ],
+        },
+        links: {
+            gitHub: null,
+            webDeploy: "https://zarephathvillage.org",
+            youtube: null,
+        }
+    },
+    
 ];

@@ -19,7 +19,7 @@ export default function Home() {
         <section id="welcome" className="transition-all ease-in-out duration-300 flex flex-col sm:flex-row gap-6">
           <Image src={profile} alt="profile-picture of the man, himself, B. Haki Martin, smiling and welcoming" className="rounded-full sm:rounded-3xl w-[75%] sm:w-[35%] mx-auto my-auto" />
 
-          <p id="home-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3 md:max-w-[65%]">
+          <p id="home-info" className="flex-1 outline outline-2 outline-slate-400 py-4 px-1 md:py-8 md:px-4 rounded-xl mt-2 indent-3 md:max-w-[65%] my-auto">
             <span className="font-semibold font-serif text-6xl border-b-2 border-[#FFD700] rounded-2xl relative right-1 bottom-2">W</span>
             elcome to my personal website. My name is Badi-Haki Martin, but please call me Haki. I am a multidisciplinary talent, working in tech as a full-stack software developer and in the entertainment field as an illustrator and designer. My passion and skills come together with my biggest pursuit towards the games industry. This website serves as a showcase to my work.
           </p>
