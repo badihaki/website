@@ -15,8 +15,8 @@ function GamePage() {
     const tag: string | undefined = gameData?.title.toLocaleLowerCase().slice(0, 9).replace(" ", "-");
 
     const gameInfo: React.JSX.Element[] | undefined = gameData?.information.description.slice(1).map(textContent => {
-        return(
-            <li>
+        return (
+            <li key={textContent.replace(" ", "-") + "-key"}>
                 {textContent}
             </li>
         )
